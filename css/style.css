@@ -742,8 +742,8 @@ ol ol {
 .header-top_animal-img{
     width: 55px; 
     height: 54px;
-    background: url(../images/svg-sprite.svg) no-repeat;
     background: url(../images/sprite1.png) no-repeat;
+    background: url(../images/svg-sprite.svg) no-repeat;
     background-size: 289%;
     margin: 5px 3px;
 }
@@ -1275,8 +1275,8 @@ ul.header-top_submenu li a{
 .footer-icon{
     width: 71px;
     height: 70px;
-    background: url(../images/svg-sprite.svg) no-repeat;
     background: url(../images/sprite1.png) no-repeat;
+    background: url(../images/svg-sprite.svg) no-repeat;
     background-size: 209px;
 }
 .footer-icon1{
@@ -1396,8 +1396,8 @@ ul.header-top_submenu li a{
     text-transform: uppercase;
 }
 .footer_internet a{
-    background: url(../images/svg-sprite.svg) no-repeat;
     background: url(../images/sprite1.png) no-repeat;
+    background: url(../images/svg-sprite.svg) no-repeat;
     width: 70px;
     height: 69px;
     display: inline-block;
