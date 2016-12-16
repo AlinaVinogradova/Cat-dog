@@ -2082,13 +2082,29 @@ div.active>span>span{
     .footer_partner-programm ul{width: 140%;}
     .footer-icon{
         width: 55px;
+        background-size: 200px;
     }
     .footer-icon1{
         width: 60px;
         margin-bottom: 45px;
+        background-position: -45px -50px;
+    }
+    .footer-icon1:hover{
+        background-position: -114px -500px;
+    }
+    .footer-icon2{
+        background-position: -50px 5px;
+    }
+    .footer_questions:hover .footer-icon2{
+        background-position: -120px 5px;
     }
     .footer-icon3{
-        width: 70px
+        width: 70px;
+        background-position: -18px -450px;
+        background-size: 190px;
+    }
+    .footer_where-buy:hover .footer-icon3{
+        background-position: -100px -450px;
     }
     .footer_internet a{
         width: 55px;
@@ -2096,28 +2112,28 @@ div.active>span>span{
         background-size: 210px;
     }
     .footer_internet a.footer_internet-icon1 {
-        background-position: -47px -480px;
+        background-position: -48px -429px;
     }
     .footer_internet a.footer_internet-icon1:hover {
-        background-position: -129px -480px;
+        background-position: -120px -429px;
     }
     .footer_internet a.footer_internet-icon2 {
-        background-position: -48px -413px
+        background-position: -48px -370px
     }
     .footer_internet a.footer_internet-icon2:hover {
-        background-position: -127px -413px;
+        background-position: -122px -370px;
     }
     .footer_internet a.footer_internet-icon3 {
-        background-position: -47px -344px;
+        background-position: -47px -310px;
     }
     .footer_internet a.footer_internet-icon3:hover {
-        background-position: -127px -344px;
+        background-position: -122px -310px;
     }
     .footer_internet a.footer_internet-icon4 {
-        background-position: -47px -276px
+        background-position: -47px -247px
     }
     .footer_internet a.footer_internet-icon4:hover {
-        background-position: -127px -276px;
+        background-position: -122px -247px;
     }
     .footer-bottom_col2 img{
         width: 112%;
@@ -2304,8 +2320,8 @@ div.active>span>span{
     .about-single-product{
         text-align: center;
     }
-    .tabs_content.tabs_content-with-table{
-        overflow-x: scroll;
+    .tabs-table-overflow{
+        overflow: auto;
     }
     #tab_3 h3{padding-left: 40px;}
     .tabs_your_comment_top-title{
