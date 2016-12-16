@@ -2304,7 +2304,7 @@ div.active>span>span{
     .about-single-product{
         text-align: center;
     }
-    .tabs_content{
+    .tabs_content.tabs_content-with-table{
         overflow-x: scroll;
     }
     #tab_3 h3{padding-left: 40px;}
