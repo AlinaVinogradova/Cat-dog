@@ -795,6 +795,7 @@ ol ol {
 .header-top_animal-imgs span{
     display: block;
     margin: -41px 0px 0 65px;
+    font-size: 14px;
 }
 /*
 .languages{
@@ -904,12 +905,15 @@ ol ol {
 }
 .fixed_menu.fixed .header-logo{ top: -85px;}
 .fixed_menu.fixed ul li a{color: #fff}
+.fixed_menu.fixed .header-top_submenu li a{
+    color: #390b00;
+}
 .fixed_menu.fixed .header-middle ul{
     width: auto;
     background: #dbbb90;
     padding: 15px 0 0px;
     border-bottom: 2px solid #000;
-    top: -20px;
+    top: -14px;
 }
 .fixed_menu.fixed .header-middle ul:first-child{
     padding-right: 250px;
