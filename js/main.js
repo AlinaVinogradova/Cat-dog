@@ -192,14 +192,17 @@ $('div.popup-tabs-btn div').click(function(){
       $(this).next().fadeIn(200);
         $('#tcal').css('visibility' , 'hidden');
    });
+    $('.index_main_btn-mag').click(function(){
+      $(this).next().fadeIn(200);
+   });
     
-//    function PopUpHide(){
-//        $(".b-popup").fadeOut(200);
-//    }
-//    
-//    $( ".popup-overlay" ).click(function() {
-//      PopUpHide();
-//    });
+    function PopUpHide(){
+        $(".b-popup").fadeOut(200);
+    }
+    
+    $( ".popup-overlay" ).click(function() {
+      PopUpHide();
+    });
     $('.pop-up_about-booking_content-hide, .popup-overlay2').click(function() {
       $('.pop-up_about-booking_block').fadeOut(200);
     });
