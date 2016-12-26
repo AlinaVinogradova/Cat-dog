@@ -58,6 +58,7 @@ $(document).ready(function() {
 //SCROLL LEFT NAV
 (function(){
 var a = document.querySelector('.main_left-column_sticky'), b = null, P = 0;
+if(a){
 window.addEventListener('scroll', Ascroll, false);
 document.body.addEventListener('scroll', Ascroll, false);
 function Ascroll() {
@@ -102,6 +103,7 @@ function Ascroll() {
   window.addEventListener('resize', function() {
     a.children[0].style.width = getComputedStyle(a, '').width
   }, false);
+}
 }
 })()
 

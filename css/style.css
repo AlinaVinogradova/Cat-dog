@@ -764,22 +764,22 @@ ol ol {
 .header-top_animal-img{
     width: 55px; 
     height: 54px;
-    background: url(../images/sprite22.png) no-repeat;
-    background: url(../images/sprite22.svg) no-repeat;
-    background-size: 330px;
+    background: url(../images/sprite/sprite.png) no-repeat;
+    background: url(../images/sprite/sprite.svg) no-repeat;
+    background-size: 300px;
     margin: 5px 3px;
 }
 .header-top_dog{
-    background-position: -77px -141px;
+    background-position: -74px -135px;
 }
 .header-top_dog:hover{
-    background-position: -9px -141px;
+    background-position: 3px -135px;
 }
 .header-top_cat{
-    background-position: -77px -195px;
+    background-position: -74px -195px;
 }
 .header-top_cat:hover{
-    background-position: -9px -195px;
+    background-position: 3px -195px;
 }
 .header-top_animal-imgs{
     margin: 3px 0 34px;
@@ -1150,38 +1150,41 @@ ul.header-top_submenu li a{
 }
 .index-popup_animal-img{
     color: #fff;
-    width: 175px;
+    width: 150px;
     height: 150px;
     display: block;
-    background: url(../images/sprite22.png) no-repeat;
-    background: url(../images/sprite22.svg) no-repeat;
-    background-size: 820px;
+    background: url(../images/sprite/sprite.png) no-repeat;
+    background: url(../images/sprite/sprite.svg) no-repeat;
+    background-size: 800px;
     margin: 5px 3px;
 }
 .index-popup_animal-imgs{
     text-align: center;
+    padding-left: 25px;
 }
 .index-popup_animal-imgs div{
     display: inline-block;
-    margin-right: 40px;
+    margin-right: 20px;
 }
-.index-popup_animal-imgs span{
+.index-popup_animal-imgs div a:nth-child(2){
     display: block;
     font-size: 20px;
     text-align: center;
     margin-left: 10px;
+    text-decoration: none;
+    color: #fff;
 }
 .index-popup-top_dog {
-    background-position: -166px -344px;
+    background-position: -196px -355px;
 }
 .index-popup-top_dog:hover{
-    background-position: 3px -344px;
+    background-position: 9px -355px;
 }
 .index-popup-top_cat {
-    background-position: -166px -480px;
+    background-position: -196px -512px;
 }
 .index-popup-top_cat:hover {
-    background-position: 3px -480px;
+    background-position: 9px -512px;
 }
 
 /*MAIN*/
@@ -1375,20 +1378,21 @@ ul.header-top_submenu li a{
 .footer-icon{
     width: 71px;
     height: 70px;
-    background: url(../images/sprite22.png) no-repeat;
-    background: url(../images/sprite22.svg) no-repeat;
-    background-size: 350px;
+    background: url(../images/sprite/sprite.png) no-repeat;
+    background: url(../images/sprite/sprite.svg) no-repeat;
+    background-size: 240px;
 }
 .footer-icon1{
     float: left;
-    background-position: -174px -152px;
+    background-position: 6px -288px;
 }
 .footer-recomendation:hover,
 .footer-recomendation:hover .footer-recomendation_ul li a{
     color: #8dc63f;
 }
 .footer-recomendation:hover .footer-icon1{
-    background-position: -240px -151px
+    background-position: 6px -218px;
+    background-size: 247px;
 }
 .footer-icon2{
     float: right;
@@ -1396,18 +1400,18 @@ ul.header-top_submenu li a{
     margin-top: 9px;
     margin-right: 10px;
     height: 52px;
-    background-position: -87px -265px;
+    background-position: -155px -265px;
 }
 .footer_questions:hover{
     color: #fff200;
 }
 .footer_questions:hover .footer-icon2{
-    background-position: -10px -264px
+    background-position: -84px -265px;
 }
 .footer-icon3{
     width: 87px;
     height: 57px;
-    background-position: -162px -220px;
+    background-position: -58px -326px;
     position: absolute;
     right: 0;
     top: 0;
@@ -1419,7 +1423,7 @@ ul.header-top_submenu li a{
     color: #fff200;
 }
 .footer_where-buy:hover .footer-icon3{
-    background-position: -258px -222px;
+    background-position: -138px -326px;
 }
 .footer-bottom ul li a{
     color: #e6dbc9; 
@@ -1493,27 +1497,27 @@ ul.header-top_submenu li a{
     font-size: 14px
 }
 .footer-bottom_col2-btn{
-    background: url(../images/sprite22.png) no-repeat;
-    background: url(../images/sprite22.svg) no-repeat;
+    background: url(../images/sprite/sprite.png) no-repeat;
+    background: url(../images/sprite/sprite.svg) no-repeat;
     width: 105px;
-    height: 40px;
-    background-size: 450px;
+    height: 30px;
+    background-size: 230px;
     position: absolute;
     bottom: 0;
     display: inline-block;
 }
 .footer-bottom_col2-appstore{
-    background-position: -209px -377px;
+    background-position: -121px -106px;
 }
 .footer-bottom_col2-appstore:hover{
-    background-position: -212px -420px;
+    background-position: -121px -143px;
 }
 .footer-bottom_col2-googleplay{
-    background-position: -325px -376px;
+    background-position: -117px -180px;
     right: 0;
 }
 .footer-bottom_col2-googleplay:hover{
-    background-position: -327px -420px;
+    background-position: -117px -215px;
 }
 .footer-bottom_col2 img{margin-top: 30px}
 .footer_internet{
@@ -1532,37 +1536,37 @@ ul.header-top_submenu li a{
     text-transform: uppercase;
 }
 .footer_internet a{
-    background: url(../images/sprite22.png) no-repeat;
-    background: url(../images/sprite22.svg) no-repeat;
+    background: url(../images/sprite/sprite.png) no-repeat;
+    background: url(../images/sprite/sprite.svg) no-repeat;
     width: 60px;
     height: 60px;
     margin: 0px 5px 5px 5px;
     display: inline-block;
-    background-size: 350px;
+    background-size: 300px;
 }
 .footer_internet a.footer_internet-icon1{
-        background-position: -10px -20px;
+        background-position: 0px 0px;
 }
 .footer_internet a.footer_internet-icon1:hover{
-        background-position: -176px -20px
+        background-position: -173px 0px
 }
 .footer_internet a.footer_internet-icon2{    
-        background-position: -77px -20px;
+        background-position: -73px 0px;
 }
 .footer_internet a.footer_internet-icon2:hover{
-        background-position: -242px -20px;
+        background-position: -245px 0px;
 }
 .footer_internet a.footer_internet-icon3{
-        background-position: -10px -85px;
+        background-position: 0px -67px;
 }
 .footer_internet a.footer_internet-icon3:hover{
-        background-position: -175px -85px;
+        background-position: -173px -67px;
 }
 .footer_internet a.footer_internet-icon4{
-        background-position: -77px -85px;
+        background-position: -66px -67px;
 }
 .footer_internet a.footer_internet-icon4:hover{
-        background-position: -242px -85px;
+        background-position: -239px -67px;
 }
 .footer_adr-tel{font-size: 15px}
 .footer-bottom_col3_tel{margin-bottom: 10px}
@@ -1608,6 +1612,7 @@ body#single-product .watched-products{
     display: inline-block;
     width: 130px;
     padding-left: 10px;
+    float: right;
 }
 .single-product_main_price-weight{
     margin-top: 50px;
@@ -2094,8 +2099,8 @@ table {
     width: 31px;
     height: 32px;
     display: block;
-    background: url(../images/sprite22.png) no-repeat;
-    background: url(../images/sprite22.svg) no-repeat;
+    background: url(../images/sprite/sprite.png) no-repeat;
+    background: url(../images/sprite/sprite.svg) no-repeat;
     background-size: 150px;
     margin: 0 4px;
 }
@@ -2163,9 +2168,13 @@ position: relative;
     position: relative;
     z-index: 1001;
 }
+.b-popup_fixed{
+    position: fixed;
+    width: 100%;
+}
 .b-popup .index-popup-content{
-    margin: 300px auto 0px auto;
-    width: 50%;
+    margin: 180px auto 0px auto;
+    width: 41%;
     padding: 20px 40px 40px;
     background: url(../images/main_popup-bg.jpg.png) no-repeat;
     background-size: 100% 100%;
@@ -2313,8 +2322,8 @@ span.b-popup-content_input_sumb{
     cursor: pointer;
 }
 .pop-up_soc-icons{
-    background: url(../images/sprite22.png) no-repeat;
-    background: url(../images/sprite22.svg) no-repeat;
+    background: url(../images/sprite/sprite.png) no-repeat;
+    background: url(../images/sprite/sprite.svg) no-repeat;
     width: 45px;
     height: 45px;
     display: inline-block;
@@ -2857,6 +2866,9 @@ span.b-popup-content_input_sumb{
   }
 }
 @media (max-width: 1200px){
+    .b-popup .index-popup-content{
+        width: 50%;
+    }
     .index_main_btn{
         font-size: 20px;
     }
@@ -2957,6 +2969,10 @@ span.b-popup-content_input_sumb{
     .footer-icon1{
         width: 60px;
         margin-bottom: 45px;
+        background-position: -5px -279px;
+    }
+    .footer-recomendation:hover .footer-icon1{
+        background-position: -5px -209px;
     }
     .footer-icon3{
         width: 70px
@@ -3043,23 +3059,43 @@ span.b-popup-content_input_sumb{
         margin-left: 11%;
     }
     .footer-icon3 {
-        background-position: -140px -188px;
-        background-size: 300px;
+        background-position: -62px -326px;
     }
     .footer_where-buy:hover .footer-icon3 {
-        background-position: -222px -190px;
+        background-position: -143px -326px;
     }
 }
 @media (max-width: 991px){
     .index_main_btn:first-child {
         left: 15px;
     }
+    .b-popup{
+        height: 165%;
+        top: -120px;
+    }
     .index_main_btn:nth-child(2) {
         right: 10px;
         text-align: right;
     }
     .b-popup .index-popup-content{
-        width: 80%;
+        width: 60%;
+    }
+    .index-popup_animal-img{
+        width: 130px;
+        height: 130px;
+        background-size: 730px;
+    }
+    .index-popup-top_dog {
+        background-position: -181px -330px;
+    }
+    .index-popup-top_dog:hover {
+        background-position: 1px -327px;
+    }
+    .index-popup-top_cat {
+        background-position: -181px -474px;
+    }
+    .index-popup-top_cat:hover {
+        background-position: 1px -474px;
     }
     .sticky {
       position: relative;
@@ -3287,6 +3323,12 @@ span.b-popup-content_input_sumb{
     }
 }
 @media (max-width: 768px){
+    .b-popup .index-popup-content {
+        width: 70%;
+    }
+    .b-popup-index{
+        height: 123%;
+    }
     .header-top_animal-imgs{
         width: 100%;
     }
@@ -3373,6 +3415,32 @@ span.b-popup-content_input_sumb{
     }
 }
 @media (max-width: 677px){
+    .b-popup .index-popup-content {
+        width: 86%;
+    }
+    .index-popup_animal-imgs div{
+        margin-right: 5px;
+    }
+    .index-popup-content h2{
+        font-size: 25px;
+    }
+    .index-popup_animal-img {
+        width: 108px;
+        height: 100px;
+        background-size: 560px;
+    }
+    .index-popup-top_dog {
+        background-position:-131px -252px;
+    }
+    .index-popup-top_dog:hover {
+        background-position: 12px -252px;
+    }
+    .index-popup-top_cat {
+        background-position: -131px -364px;
+    }
+    .index-popup-top_cat:hover {
+        background-position: 12px -364px;
+    }
     .fixed_menu.fixed{
         height: 120px;
     }
@@ -3418,6 +3486,32 @@ span.b-popup-content_input_sumb{
     }
 }
 @media (max-width: 435px){
+    .b-popup .index-popup-content{
+        padding: 20px 15px 40px;
+    }
+    .index-popup_animal-imgs a:nth-child(2){
+        font-size: 16px;
+    }
+    .index-popup_animal-img {
+        margin-left: 15px;
+        height: 85px;
+        background-size: 475px;
+    }
+    .index-popup-content h2{
+        font-size: 21px;
+    }
+    .index-popup-top_dog {
+        background-position: -117px -214px;
+    }
+    .index-popup-top_dog:hover {
+        background-position: 3px -214px;
+    }
+    .index-popup-top_cat {
+        background-position: -117px -308px;
+    }
+    .index-popup-top_cat:hover {
+        background-position: 3px -308px;
+    }
     .fixed_menu.fixed{
         min-height: 120px;
     }
