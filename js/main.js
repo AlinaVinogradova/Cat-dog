@@ -123,15 +123,6 @@ $('div.about-single-product div').click(function(){
       $('#tab_'+ id).fadeIn(400);
 });  
     
-//PopUp TAB
-$('div.popup-tabs-btn div').click(function(){
-      var id = $(this).data('id');
-      $('div.popup-tabs-btn div').removeClass('active');
-      $('#tcal').css('visibility' , 'hidden');
-      $(this).addClass('active');
-      $('.popup-tabs_content').hide();
-      $('#popup-tab_'+ id).fadeIn(400);
-}); 
     
     
 //Comment rating (Stars)
@@ -186,84 +177,146 @@ $('div.popup-tabs-btn div').click(function(){
     });
     
     
-    <!--POP UP-->
-    $('.pop-up_btn').click(function(){
-      $(this).next().fadeIn(200);
-   });
-    $('.pop-up_about-booking').click(function(){
-      $(this).next().fadeIn(200);
-        $('#tcal').css('visibility' , 'hidden');
-   });
+    
+//POP UP
+    function PopUpHide(){
+        $(".b-popup").css('display', 'none');
+    }
     $('.index_main_btn-mag').click(function(){
       $(this).next().fadeIn(200);
    });
-    
-    function PopUpHide(){
-        $(".b-popup").fadeOut(200);
-    }
-    
     $( ".popup-overlay" ).click(function() {
-      PopUpHide();
+        $(".b-popup").css('display', 'none');
     });
-    $('.pop-up_about-booking_content-hide, .popup-overlay2').click(function() {
+    $('.pop-up_about-booking_content-hide').click(function() {
       $('.pop-up_about-booking_block').fadeOut(200);
     });
 
-    
-    //Регулярные выражения для проверки времени
-    $('.popup-tabs_content_submit').click(function(){
-    var hour1 = $('.popup-tabs_content_right-col_time-input input:first-child').val(),
-        hour2 = $('.popup-tabs_content_right-col_time-input input:nth-child(2)').val(),
-        minutes1 = $('.popup-tabs_content_right-col_time-input input:nth-child(4)').val(),
-        minutes2 = $('.popup-tabs_content_right-col_time-input input:nth-child(5)').val(),
-        hour12 = $('.popup-tabs_content2_left-col_time-input input:first-child').val(),
-        hour22 = $('.popup-tabs_content2_left-col_time-input input:nth-child(2)').val(),
-        minutes12 = $('.popup-tabs_content2_left-col_time-input input:nth-child(4)').val(),
-        minutes22 = $('.popup-tabs_content2_left-col_time-input input:nth-child(5)').val(),
-        hour1_pattern = /[0-1]{1}/,
-        hour2_pattern = /\d{1}/,
-        minutes1_pattern = /\d{1}/,
-        minutes2_pattern = /\d{1}/;
-    var prov1 = hour1_pattern.test(hour1);
-    var prov2 = hour2_pattern.test(hour2);
-    var prov3 = minutes1_pattern.test(minutes1);
-    var prov4 = minutes2_pattern.test(minutes2);
-    var prov12 = hour1_pattern.test(hour12);
-    var prov22 = hour2_pattern.test(hour22);
-    var prov32 = minutes1_pattern.test(minutes12);
-    var prov42 = minutes2_pattern.test(minutes22);
-        if (prov1==true && prov2==true && prov3==true && prov4==true || prov12==true && prov22==true && prov32==true && prov42==true) {
-                alert("Вы зарегистрированы!");
-          }
-            else{
-                alert("Введенные данные некорректны!");
-          }
-    })
-    
-//Pop up корзина (количество)
-    $('.minus').click(function () {
-        var $input = $(this).parent().find('input');
-        var count = parseInt($input.val()) - 1;
-        count = count < 1 ? 1 : count;
-        $input.val(count);
-        $input.change();
-        return false;
-    });
-    $('.plus').click(function () {
-        var $input = $(this).parent().find('input');
-        $input.val(parseInt($input.val()) + 1);
-        $input.change();
-        return false;
-});
 
-//Pop up бронь (время)
-    $('.popup-tabs_content_right-col_time-input input, .popup-tabs_content2_left-col_time-input input').keyup(function(){
-      if($(this).val().match(/^\d{1}$/)){
-        $(this).next('input').focus();
-      }else{
-        $(this).val('');
-      }
+ 
+    
+    $('.header-top_set_registration').click(function(event){
+        event.preventDefault();
+		jQuery.ajax({
+			url: '../pop-up/registration.html',
+            cache: false, 
+			success: function(html){
+				$('.b-popup-regist').html(html).css('display', 'block');
+                $( ".popup-overlay" ).click(function() {
+                    $('.b-popup.b-popup-regist').css('display', 'none');
+    });
+			}
+		});
     });
     
     
+    $('.header-top_set_enter').click(function(event){
+        event.preventDefault();
+		jQuery.ajax({
+			url: '../pop-up/enter.html',
+            cache: false, 
+			success: function(html){
+				$('.b-popup-enter').html(html).css('display', 'block');
+                $( ".popup-overlay" ).click(function() {
+                    $('.b-popup.b-popup-enter').css('display', 'none');
+    });
+			}
+		});
+    });
+    
+    $('.header-top_set_basket').click(function(event){
+        event.preventDefault();
+		jQuery.ajax({
+			url: '../pop-up/basket.html',
+            cache: false, 
+			success: function(html){
+				$('.b-popup-basket').html(html).css('display', 'block');
+                $( ".popup-overlay, .pop-up_basket-hide" ).click(function() {
+                    $('.b-popup.b-popup-basket').css('display', 'none');
+                });
+                //Pop up корзина (количество)
+                $('.minus').click(function () {
+                    var $input = $(this).parent().find('input');
+                    var count = parseInt($input.val()) - 1;
+                    count = count < 1 ? 1 : count;
+                    $input.val(count);
+                    $input.change();
+                    return false;
+                });
+                $('.plus').click(function () {
+                    var $input = $(this).parent().find('input');
+                    $input.val(parseInt($input.val()) + 1);
+                    $input.change();
+                    return false;
+            });
+			}
+		});
+    });
+    
+    $('.single-prod_btn').click(function(){
+		jQuery.ajax({
+			url: '../pop-up/booking.html',
+            cache: false, 
+			success: function(html){
+				$('.b-popup-booking').html(html).css('display', 'block');
+                $( ".popup-overlay" ).click(function() {
+                      $('.b-popup.b-popup-booking').css('display', 'none');
+                    });
+                $('.pop-up_about-booking').click(function(){
+                      $('.pop-up_about-booking_block').css('display', 'block');
+                      $('#tcal').css('visibility' , 'hidden');
+                    });
+                $('.pop-up_about-booking_content-hide').click(function(){
+                      $('.pop-up_about-booking_block').css('display', 'none');
+                    });
+                //PopUp TAB
+                $('div.popup-tabs-btn div').click(function(){
+                      var id = $(this).data('id');
+                      $('div.popup-tabs-btn div').removeClass('active');
+                      $('#tcal').css('visibility' , 'hidden');
+                      $(this).addClass('active');
+                      $('.popup-tabs_content').hide();
+                      $('#popup-tab_'+ id).fadeIn(400);
+                });
+                //Регулярные выражения для проверки времени
+                $('.popup-tabs_content_submit').click(function(){
+                var hour1 = $('.popup-tabs_content_right-col_time-input input:first-child').val(),
+                    hour2 = $('.popup-tabs_content_right-col_time-input input:nth-child(2)').val(),
+                    minutes1 = $('.popup-tabs_content_right-col_time-input input:nth-child(4)').val(),
+                    minutes2 = $('.popup-tabs_content_right-col_time-input input:nth-child(5)').val(),
+                    hour12 = $('.popup-tabs_content2_left-col_time-input input:first-child').val(),
+                    hour22 = $('.popup-tabs_content2_left-col_time-input input:nth-child(2)').val(),
+                    minutes12 = $('.popup-tabs_content2_left-col_time-input input:nth-child(4)').val(),
+                    minutes22 = $('.popup-tabs_content2_left-col_time-input input:nth-child(5)').val(),
+                    hour1_pattern = /[0-1]{1}/,
+                    hour2_pattern = /\d{1}/,
+                    minutes1_pattern = /\d{1}/,
+                    minutes2_pattern = /\d{1}/;
+                var prov1 = hour1_pattern.test(hour1);
+                var prov2 = hour2_pattern.test(hour2);
+                var prov3 = minutes1_pattern.test(minutes1);
+                var prov4 = minutes2_pattern.test(minutes2);
+                var prov12 = hour1_pattern.test(hour12);
+                var prov22 = hour2_pattern.test(hour22);
+                var prov32 = minutes1_pattern.test(minutes12);
+                var prov42 = minutes2_pattern.test(minutes22);
+                    if (prov1==true && prov2==true && prov3==true && prov4==true || prov12==true && prov22==true && prov32==true && prov42==true) {
+                            alert("Вы зарегистрированы!");
+                      }
+                        else{
+                            alert("Введенные данные некорректны!");
+                      }
+                });
+                //Pop up бронь (время)
+                $('.popup-tabs_content_right-col_time-input input, .popup-tabs_content2_left-col_time-input input').keyup(function(){
+                  if($(this).val().match(/^\d{1}$/)){
+                    $(this).next('input').focus();
+                  }else{
+                    $(this).val('');
+                  }
+                });
+			}
+		});
+    });
+
 });
