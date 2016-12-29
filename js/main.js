@@ -56,7 +56,7 @@ $(document).ready(function() {
 
             
 //SCROLL LEFT NAV
-(function(){
+function leftNav(){
 var a = document.querySelector('.main_left-column_sticky'), b = null, P = 0;
 if(a){
 window.addEventListener('scroll', Ascroll, false);
@@ -105,7 +105,59 @@ function Ascroll() {
   }, false);
 }
 }
-})()
+}leftNav()
+            
+//SCROLL PERSONAL AACCOUNT NAV
+function accountNav(){
+var a = document.querySelector('.personal-account-main_left-column_sticky'), b = null, P = 0;
+if(a){
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false);
+function Ascroll() {
+  if (b == null) {
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) {
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild);
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) {
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px';
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  var Ra = a.getBoundingClientRect(),
+      R = Math.round(Ra.top + b.getBoundingClientRect().height - document.querySelector('.footer').getBoundingClientRect().top);  // селектор блока, при достижении нижнего края которого нужно открепить прилипающий элемент
+    var sw = window.innerWidth;
+    if(sw > 992){
+      if ((Ra.top - P) <= 140) {
+        if ((Ra.top - P) <= (R+140)) {
+          b.className = 'stop';
+          b.style.top = - R-60 +'px';
+        } else {
+          b.className = 'sticky';
+          b.style.top = 140 + 'px';
+        }
+      } else {
+        b.className = '';
+        b.style.top = '';
+      }
+    } else{
+        b.className = '';
+        b.style.top = '';
+    }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+}
+}accountNav()
 
 
 //NiceSelect
@@ -315,7 +367,11 @@ $('div.about-single-product div').click(function(){
                     $(this).val('');
                   }
                 });
+                var script = '<script src="js/tcal.js"></script>';
+                $('head').append(script);
 			}
+            
+
 		});
     });
 

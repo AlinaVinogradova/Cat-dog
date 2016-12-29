@@ -1080,6 +1080,15 @@ ul.header-top_submenu li a{
     height: 353px;
     margin-top: 20px;
 }
+.personal-account_header-bottom{
+    position: relative;
+    border-bottom: 1px solid #2c0b00;
+    height: 125px;
+    margin-top: 95px;
+    font-size: 30px;
+    text-align: center;
+    color: #727030;
+}
 .header-bottom #owl-demo2{
     position: absolute;
     top: 35px;
@@ -1238,7 +1247,7 @@ ul.header-top_submenu li a{
     background: url(../images/list-type-active.png);
 }
 
-.main_left-column h3{
+.main_left-column h3,{
     font-family: Algerius;
     color: #e74c3c;
     font-weight: 400;
@@ -2788,29 +2797,176 @@ span.b-popup-content_input_sumb{
 
 /*Index*/
 .index-main{
-    background: url(../images/index-main.jpg) no-repeat;
+    background: url(../images/hf-main-page.png) no-repeat;
     background-size: cover;
     background-position: center;
-    height: 534px;
+    height: 568px;
     position: relative;
-}
-.index-main>.container{
-    
 }
 .index_main_btn{
     position: absolute;
     top: 235px;
     font-family: Algerius;
-    font-size: 30px;
+    font-size: 27px;
     color: #3f241f;
     display: inline-block;
     cursor: pointer;
 }
 .index_main_btn:first-child{
-    left: 45px;
+    left: 0;
+    background: url(../images/index-button-bg1.png) no-repeat;
+    background-size: cover;
+    background-position: 0px -3px;
+    width: 360px;
+    padding-left: 30px;
+    padding-top: 35px;
+    height: 133px;
 }
 .index_main_btn:nth-child(2){
-    right: 40px;
+    right: 0;
+    background: url(../images/index-button-bg.png) no-repeat;
+    background-size: cover;
+    background-position: -45px -3px;
+    width: 375px;
+    padding-left: 60px;
+    padding-top: 40px;
+    height: 133px;
+}
+
+/*PERSONAL ACCOUNT*/
+body#personal-account{
+    background: #fff;
+}
+.personal-account-main_left-column>h3{
+    font-family: Algerius;
+    color: #4a1f16;
+    font-weight: 400;
+    font-size: 21px;
+}
+.personal-account-main_left-column_sticky{
+    border-right: 2px solid;
+    border-image: url(../images/left-border.png) 1;
+}
+.personal-account-main_left-column_ul{
+    padding: 0;
+    list-style-type: none;
+}
+.personal-account-main_left-column_ul li {
+    margin: 10px auto;
+}
+.personal-account-main_left-column_ul li a{
+    text-decoration: none;
+    color: #9b9b9b;  
+    font-family: MinionPro;
+    font-size: 20px;
+}
+.personal-account-main_left-column_ul li a.active{
+    color: #000;
+}
+.personal-account-main_left-column_ul li:last-child a{
+    color: #d7cecb;
+}
+.personal-account-main_content .personal-account-main_content_title h2,
+.personal-account-pet-main_content .personal-account-pet-main_content_title h2{
+    display: inline-block;
+    font-family: Algerius;
+    color: #4a1f16;
+    font-weight: 400;
+    font-size: 26px;
+}
+.personal-account-main_content .personal-account-main_content_title h2+span,
+.personal-account-pet-main_content .personal-account-pet-main_content_title h2+span{
+    color: #bebebe;
+    float: right;
+    font-size: 26px;
+    margin-top: 23px;
+}
+.personal-account-main_content-photo,
+.personal-account-pet-main_content-photo{
+    background: #cccccc;
+    color: #fff;
+    width: 100px;
+    height: 120px;
+    text-align: center;
+    padding-top: 40px;
+}
+.personal-account-main_content-info,
+.personal-account-pet-main_content-info{
+    font-family: MinionPro;
+    margin-left: 20px;
+}
+.personal-account-main_content-info h2,
+.personal-account-pet-main_content-info h2{
+    margin: 25px 0 0;
+}
+.personal-account-main_content-info div,
+.personal-account-pet-main_content-info div{
+    border-bottom: 1px solid;
+    border-image: url(../images/bottom-border.png) 1;
+}
+.personal-account-main_content-info div span:first-child,
+.personal-account-pet-main_content-info div span:first-child{
+    font-size: 24px;
+}
+.personal-account-main_content-info>div>span:last-child,
+.personal-account-pet-main_content-info>div>span:last-child{
+    float: right;
+    text-decoration: underline;
+    color: #380a00;
+    padding-top: 5px;
+    font-size: 19px;
+    cursor: pointer;
+}
+.personal-account-main_content-info_tel div span input{
+    border: 2px solid #d5d0cc;
+    background: none;
+    width: 85%;
+    padding-left: 5px;
+    height: 28px;
+    margin: 10px 0 4px;
+}
+.personal-account-main_content-info_tel div:last-child{
+    height: 40px;
+}
+.personal-account-main_content-info_tel div:last-child span:last-child{
+    padding-top: 15px;
+    color: #d5d5d5;
+}
+.personal-account-main_content-info_tel div:nth-child(3) span:last-child{
+    padding-top: 15px;
+}
+.personal-account-main_content-info>div+span,
+.personal-account-pet-main_content-info>div+span{
+    color: #9c8480 !important;
+    display: block;
+    margin-bottom: 10px;
+    float: none !important;
+    font-size: 16px !important;
+    text-decoration: none !important;
+}
+.personal-account-main_content-info.personal-account-main_content-info_address{
+    margin-top: 50px;
+    border: none;
+}
+.personal-account-main_content-info.personal-account-main_content-info_password{
+    border: none;
+    margin-bottom: 100px;
+}
+.personal-account-main_content-info_password h2{
+    color: #fc0200;
+}
+.personal-account-main_content-info_password div span input{
+    background: #e3c9a8;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    width: 85%;
+    height: 28px;
+    margin: 10px 0 4px;
+}
+.personal-account-main_content-info_password div:nth-child(4) span+span,
+.personal-account-main_content-info_password div:nth-child(6) span+span{
+    padding-top: 15px;
 }
 
 @media (min-width: 1300px){
@@ -3347,6 +3503,18 @@ span.b-popup-content_input_sumb{
     }
 }
 @media (max-width: 768px){
+    .index_main_btn:first-child{
+        padding-left: 0;
+        padding-right: 35px;
+        text-align: center;
+        top: 90px;
+        background-size: 93%;
+    }
+    .index_main_btn:nth-child(2){
+        text-align: center;
+        padding-right: 0;
+        background-size: 93%;
+    }
     .b-popup .index-popup-content {
         width: 70%;
     }
@@ -3498,6 +3666,12 @@ span.b-popup-content_input_sumb{
     }
 }
 @media (max-width: 530px){
+    .index_main_btn:first-child{
+        width: 100%
+    }
+    .index_main_btn:nth-child(2){
+        width: 100%;
+    }
     .tab_3-icos2>div{
         text-align: center
     }
