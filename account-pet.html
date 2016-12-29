@@ -11,7 +11,7 @@
     <script src="js/jquery.nice-select.js"></script>
     <script src="js/main.js"> </script>
 </head>
-<body id="personal-account">
+<body id="personal-account-pet">
      <div id="preloader"></div>
     <div class="top-bg">
        <div class="fixed_menu default">
@@ -119,7 +119,7 @@
                     <li><a href="" class="active">Iнформацiя<br>про моiх тварин</a></li>
                     <li><a href="">Iнформацiя<br>про розплiдник</a></li>
                     <li><a href="">Iсторiя покупок</a></li>
-                    <li><a href="">Улюбленi тварини</a></li>
+                    <li><a href="">Улюбленi товари</a></li>
                     <li><a href="">Кошик</a></li>
                     <li><a href="">Отпримати<br>консультацiю</a></li>
                 </ul>
@@ -128,56 +128,97 @@
         <div class="col-lg-10 col-md-9 col-sm-8 col-xs-12 col-xxs-12 personal-account-pet-main_content">
             <div class="personal-account-pet-main_content_title"><h2>Iнформацiя про моiх тварин</h2></div>
             <div class="personal-account-pet-main_content-photo col-lg-2 col-md-2 col-sm-2">Додати фото</div>
-            <div class="personal-account-pet-main_content-info col-lg-10 col-md-10 col-sm-10">
+            <div class="personal-account-pet-main_content-infos col-lg-10 col-md-10 col-sm-10">
                 <div class="personal-account-pet-main_content-info">
                     <h2>Кличка*</h2>
                     <div>
-                        <span></span>
+                        <span><input type="text"></span>
                         <span>Редагувати</span>
                     </div>
                 </div>
                 <div class="personal-account-pet-main_content-info">
                     <h2>Вид тварини*</h2>
-                    <div>
-                         <span></span>
-                    </div>
+                         <span>
+                             <select class="personal-account-pet-main_content-info_select-type">
+                                 <option value=""></option>
+                                 <option value="dog">Собака</option>
+                                 <option value="cat">Кiшка</option>
+                             </select>
+                         </span>
                 </div>
                 <div class="personal-account-pet-main_content-info">
                     <h2>Порода*</h2>
                     <div>
-                        <span></span>
+                        <span><input type="text"></span>
                         <span>Редагувати</span>
                     </div>
                 </div>
                 <div class="personal-account-pet-main_content-info">
                     <h2>Дата народження улюбленця</h2>
-                    <div>
-                        
-                    </div>
-                    <div>
-                        
-                    </div>
-                    <div>
-                        
-                    </div>
+                        <span>
+                             <select class="personal-account-pet-main_content-info_select-type">
+                                 <option value="">День</option>
+                                 <option value="dog">1</option>
+                                 <option value="cat">2</option>
+                                 <option value="cat">3</option>
+                                 <option value="cat">4</option>
+                                 <option value="cat">5</option>
+                                 <option value="cat">6</option>
+                                 <option value="cat">7</option>
+                                 <option value="cat">8</option>
+                                 <option value="cat">9</option>
+                             </select>
+                         </span>
+                        <span>
+                             <select class="personal-account-pet-main_content-info_select-type">
+                                 <option value="">Мiсяц</option>
+                                 <option value="dog">Січень</option>
+                                 <option value="cat">Лютий</option>
+                                 <option value="cat">Березень</option>
+                                 <option value="cat">Квітень</option>
+                                 <option value="cat">Травень</option>
+                                 <option value="cat">Червень</option>
+                                 <option value="cat">Липень</option>
+                                 <option value="cat">Серпень</option>
+                                 <option value="cat">Вересень</option>
+                                 <option value="cat">Жовтень</option>
+                                 <option value="cat">Листопад</option>
+                                 <option value="cat">Грудень</option>
+                             </select>
+                         </span>
+                        <span>
+                             <select class="personal-account-pet-main_content-info_select-type">
+                                 <option value="">Рік</option>
+                                 <option value="dog">2000</option>
+                                 <option value="cat">2001</option>
+                                 <option value="cat">2002</option>
+                                 <option value="cat">2003</option>
+                                 <option value="cat">2004</option>
+                                 <option value="cat">2005</option>
+                             </select>
+                         </span>
                 </div>
                  <div class="personal-account-pet-main_content-info">
                     <h2>"Синок" чи "доця"</h2>
-                    <div>
-                        
-                    </div>
+                    <span>
+                             <select class="personal-account-pet-main_content-info_select-type">
+                                 <option value=""></option>
+                                 <option value="dog">Синок</option>
+                                 <option value="cat">Доця</option>
+                             </select>
+                         </span>
                 </div>
                  <div class="personal-account-pet-main_content-info">
                     <h2>Додаткова iнформацiя</h2>
                     <div>
-                        <texarea></texarea>
+                        <textarea cols="30" rows="13"></textarea>
                     </div>
-                </div>
-                <div class="personal-account-pet-main_content-info">
-                    <a href="">Додати улюбленця</a>
                 </div>
             </div>
         </div>
+                 <div class="personal-account-pet-main_content-add-pet">
+                    <a href="">Додати улюбленця</a>
+                </div>
        </div>
    </div>
         

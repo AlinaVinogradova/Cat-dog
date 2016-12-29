@@ -26,6 +26,29 @@ $(document).ready(function() {
           singleItem:true,
           pagination: false
       });
+    
+    $("#owl-demo3").owlCarousel({
+          items : 3,
+          slideSpeed : 300,
+          paginationSpeed : 400,
+          pagination : false,
+          paginationNumbers: false,
+          navigation : true,
+          navigationText : [" "," "],
+          rewindNav : true,
+          scrollPerPage : false,
+      });
+    $("#owl-demo4").owlCarousel({
+          items : 3,
+          slideSpeed : 300,
+          paginationSpeed : 400,
+          pagination : false,
+          paginationNumbers: false,
+          navigation : true,
+          navigationText : [" "," "],
+          rewindNav : true,
+          scrollPerPage : false,
+      });
             
 //FIXED MENU
         var $menu = $(".fixed_menu");
@@ -161,9 +184,9 @@ function Ascroll() {
 
 
 //NiceSelect
-$('select.single-product_main_select').niceSelect();           
-var selectLine = '<div class="select-line-current">'
-$('.single-product_main_select  span.current').html(selectLine);
+$('.personal-account-pet-main_content-info_select-type').niceSelect();           
+//var selectLine = '<div class="select-line-current">'
+//$('.single-product_main_select  span.current').html(selectLine);
             
             
 //Single product TAB
@@ -175,7 +198,25 @@ $('div.about-single-product div').click(function(){
       $('#tab_'+ id).fadeIn(400);
 });  
     
-    
+    //BASKET PLUS MINUS
+    $('.minus').click(function () {
+                    var $input = $(this).parent().find('input');
+                    var count = parseInt($input.val()) - 1;
+                    count = count < 1 ? 1 : count;
+                    $input.val(count);
+                    $input.change();
+                    return false;
+                });
+                $('.plus').click(function () {
+                    var $input = $(this).parent().find('input');
+                    $input.val(parseInt($input.val()) + 1);
+                    $input.change();
+                    return false;
+            });
+    //BASKET HIPE SINGLE PRODUCT
+    $('.personal-account-basket-main_content-inside_single-product-hide').click(function(){
+                    $(this).parent('.personal-account-basket-main_content-inside_single-product').hide();
+                })
     
 //Comment rating (Stars)
     $('.tabs_your_comment_top_stars span').hover( function(){
@@ -301,6 +342,9 @@ $('div.about-single-product div').click(function(){
                     $input.change();
                     return false;
             });
+                $('.pop-up_basket-inside_single-product-hide').click(function(){
+                    $(this).parent('.pop-up_basket-inside_single-product').hide();
+                })
 			}
 		});
     });
