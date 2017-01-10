@@ -5,6 +5,17 @@
   });
 
 $(document).ready(function() {
+    
+    // PRELOADER FOR LEFT MENU
+    $('.main_left-column_uls .checkbox').click(function(){
+        $('#preloader-checkbox').css('display', 'block')
+        setTimeout(function() {
+            
+          $('#preloader-checkbox').fadeOut();
+        }, 800);
+    });
+    
+    
 // OWL CAROUSEL    
       $("#owl-demo").owlCarousel({
           items : 4,
@@ -419,4 +430,19 @@ $('div.about-single-product div').click(function(){
 		});
     });
 
+    var redact = $('.personal-account-main_content-info>div>span:last-child, .personal-account-pet-main_content-info>div>span:last-child, .personal-account-kennel-main_content-info>div>span:last-child');
+    
+    redact.click(function(){
+        var redacted_input = $(this).siblings('.account_show-input').val(),
+            redacted_input2 = $(this).siblings('.account_hidden-input').val(),
+            redact_val = $(this).siblings('span').text();
+        
+       
+        $(this).siblings('.account_hidden-input').val(redact_val);
+        $(this).siblings('span').text(redacted_input).toggle();
+        $(this).siblings('.account_hidden-input').toggleClass('account_show-input');
+    });
+
+
+    
 });
