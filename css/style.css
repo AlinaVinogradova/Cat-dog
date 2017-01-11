@@ -737,6 +737,7 @@ ol ol {
   overflow: visible;
   background: #fff url('../images/spin.gif') no-repeat center center;
 }
+/*
 #preloader-checkbox{
   position: fixed;
   left: 0;
@@ -747,6 +748,33 @@ ol ol {
   overflow: visible;
   background: rgba(255, 255, 255, 0.3) url('../images/spin.gif') no-repeat center center;
     display: none;
+}
+*/
+.required label::after {
+    content: '*';
+}
+.form {
+    position: relative;
+}
+.loader {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: rgba(0, 0, 0, .3) url(../images/spin.gif) no-repeat center center;
+}
+.loader-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: rgba(0, 0, 0, .0);
 }
 .top-bg{
     background: url(../images/top-bg.png) no-repeat;
@@ -847,6 +875,13 @@ ol ol {
     z-index: 9;
     display: inline-block;
     margin: -121px 0 0 433px;
+}
+#index-page .header-logo{
+    position: absolute;
+    margin-top: -75px;
+}
+#index-page .fixed_menu.fixed .header-logo{
+    top: 0;
 }
 .header-logo img{
     width: 290px;
@@ -1843,8 +1878,9 @@ body#single-product .watched-products{
     .nice-select.disabled:after {
       border-color: #cccccc; }
 .nice-select.personal-account-pet-main_content-info_select-type .current{
-    position: relative; 
+    position: absolute; 
     font-size: 20px;
+    top: -23px;
 }
 .select-line-current{
     position: absolute;
@@ -3003,9 +3039,11 @@ body#personal-account-favorite{
     margin-left: 20px;
 }
 .personal-account-main_content-info h2,
-.personal-account-pet-main_content-info h2,
 .personal-account-kennel-main_content-info h2{
     margin: 25px 0 0;
+}
+.personal-account-pet-main_content-info h2{
+    margin: 25px 0;
 }
 .personal-account-main_content-info div,
 .personal-account-pet-main_content-info div,
@@ -3078,7 +3116,7 @@ body#personal-account-favorite{
     border: none;
     border-radius: 10px;
     padding-left: 10px;
-    width: 85%;
+    width: 80%;
     height: 28px;
     margin: 10px 0 4px;
 }
@@ -3195,11 +3233,14 @@ body#personal-account-favorite{
 }
 .personal-account-history-main_content_progressbar_dog-main,
 .personal-account-history-main_content_progressbar_cat-main{
-    width: 93%;
+    width: 100%;
     position: relative;
     background: #e3c9a8;
     height: 20px;
-    margin: 60px auto 100px;
+    margin: 60px 0 100px 25px;
+}
+.personal-account-history-main_content_progressbar_cat-main{
+     margin-top: 180px;   
 }
 .personal-account-history-main_content_progressbar_dog-progress,
 .personal-account-history-main_content_progressbar_cat-progress{
@@ -3217,7 +3258,11 @@ body#personal-account-favorite{
     height: 48px;
     width: 47px;
     right: -22px;
-    top: -52px;
+    top: -54px;
+    z-index: 2;
+}
+.personal-account-history-main_content_progressbar_cat-progress-img{
+    background-position: 0px -182px;
 }
 .personal-account-history-main_content_progressbar_dog-progress-spend,
 .personal-account-history-main_content_progressbar_cat-progress-spend{
@@ -3227,6 +3272,7 @@ body#personal-account-favorite{
     bottom: -36px;
     font-size: 13px;
     padding: 2px 8px;
+    z-index: 2;
 }
 .personal-account-history-main_content_progressbar_dog-progress-spend:after,
 .personal-account-history-main_content_progressbar_cat-progress-spend:after{
@@ -3265,24 +3311,59 @@ body#personal-account-favorite{
 .personal-account-history-main_content_progressbar_cat-spot:nth-of-type(2){
     left: 25%;
 }
+.personal-account-history-main_content_progressbar_cat-spot:nth-of-type(2) span:first-child{
+    top: -30px;
+    left: 3px;
+}
+.personal-account-history-main_content_progressbar_cat-spot:nth-of-type(2) span:first-child img{
+    width: 25px;
+}
+.personal-account-history-main_content_progressbar_dog-spot:nth-of-type(2) span:last-child,
+.personal-account-history-main_content_progressbar_cat-spot:nth-of-type(2) span:last-child,
+.personal-account-history-main_content_progressbar_dog-spot:nth-of-type(3) span:last-child,
+.personal-account-history-main_content_progressbar_cat-spot:nth-of-type(3) span:last-child{
+    left: -23px;
+}
 .personal-account-history-main_content_progressbar_dog-spot:nth-of-type(3),
 .personal-account-history-main_content_progressbar_cat-spot:nth-of-type(3){
     left: 50%;
+}
+.personal-account-history-main_content_progressbar_cat-spot:nth-of-type(3) span:first-child{
+    top: -42px;
+    left: -2px;
+}
+.personal-account-history-main_content_progressbar_cat-spot:nth-of-type(3) span:first-child img{
+    width: 37px;
+}
+.personal-account-history-main_content_progressbar_dog-spot:nth-of-type(4) span:last-child,
+.personal-account-history-main_content_progressbar_cat-spot:nth-of-type(4) span:last-child{
+    left: -23px;
 }
 .personal-account-history-main_content_progressbar_dog-spot:nth-of-type(4),
 .personal-account-history-main_content_progressbar_cat-spot:nth-of-type(4){
     left: 75%;
 }
-.personal-account-history-main_content_progressbar_dog-spot span{
+.personal-account-history-main_content_progressbar_cat-spot:nth-of-type(4) span:first-child{
+    top: -50px;
+    left: -7px;
+}
+.personal-account-history-main_content_progressbar_cat-spot:nth-of-type(4) span:first-child img{
+    width: 45px;
+}
+.personal-account-history-main_content_progressbar_dog-spot span,
+.personal-account-history-main_content_progressbar_cat-spot span{
     position: absolute;
     white-space: nowrap;
 }
-.personal-account-history-main_content_progressbar_dog-spot span:first-child{
+.personal-account-history-main_content_progressbar_dog-spot span:first-child,
+.personal-account-history-main_content_progressbar_cat-spot span:first-child{
     top: -25px;
+    left: 5px;
     font-size: 20px;
     font-family: Algerius;
 }
-.personal-account-history-main_content_progressbar_dog-spot span:last-child{
+.personal-account-history-main_content_progressbar_dog-spot span:last-child,
+.personal-account-history-main_content_progressbar_cat-spot span:last-child{
     bottom: -34px;
     font-size: 20px;
 }
@@ -3391,6 +3472,7 @@ body#personal-account-favorite{
     position: absolute;
     font-size: 12px;
     bottom: 8px;
+    white-space: nowrap;
 }
 .owl-demo3-descr p{
     margin: 2px 0;
@@ -3471,6 +3553,7 @@ body#personal-account-favorite{
     position: absolute;
     font-size: 12px;
     bottom: 8px;
+    right: 5px;
 }
 .personal-account-favorite-main_content_favorite-product-descr p{
     margin: 2px 0;
@@ -3506,7 +3589,7 @@ body#personal-account-favorite{
     height: 37px;
 }
 .personal-account-basket-main_content-inside_title span:first-child {
-    margin-right: 13%;
+    margin-right: 17%;
     margin-left: 15%;
 }
 .personal-account-basket-main_content-inside_title span {
@@ -3642,7 +3725,7 @@ body#personal-account-favorite{
     display: none;
     border: 2px solid #d5d0cc;
     background: none;
-    width: 85%;
+    width: 80%;
     padding-left: 5px;
     padding-top: 6px;
     height: 28px;
@@ -3653,8 +3736,14 @@ body#personal-account-favorite{
 .personal-account-main_content-info_tel div:nth-child(3){
     height: 40px;
 }
-.personal-account-main_content-info_tel .account_hidden-input:nth-child(2){
-    margin-top: 5px;
+/*
+.personal-account-main_content-info_tel div:first-child .account_hidden-input:first-child{
+        margin-top: 0;
+    }
+*/
+.personal-account-main_content-info_tel div:nth-child(3) .account_hidden-input:nth-child(2),
+.personal-account-main_content-info_tel div:nth-child(4) .account_hidden-input:nth-child(2){
+    margin-top: 7px;
 }
 .account_show-input{
     display: inline-block;
@@ -3875,6 +3964,15 @@ body#personal-account-favorite{
         margin-right: 18%;
         margin-left: 12%;
     }
+    .personal-account-basket-main_content-inside_title span:first-child{
+        margin-right: 6%;
+    }
+    .personal-account-basket-main_content-inside_single-product-hide{
+        right: -65px;
+    }
+    .personal-account-favorite-main_content_favorite-product-descr_about_weight{
+        right: -32px;
+    }
 }
 @media (max-width: 1200px){
     .footer-bottom_col2-appstore{
@@ -3929,6 +4027,30 @@ body#personal-account-favorite{
     }
     .footer_where-buy:hover .footer-icon3 {
         background-position: -143px -326px;
+    }
+    .personal-account-basket-main_content-inside_bottom_block{
+        font-size: 20px;
+    }
+    .personal-account-basket-main_content-inside_bottom_block a,
+    .personal-account-basket-main_content-inside_bottom>a{
+        font-size: 24px;
+    }
+    .owl-demo3-img{
+        width: 100%;
+        display: block;
+        height: 170px;
+    }
+    .owl-demo3-img img{
+        position: relative;
+        max-height: 150px;
+    }
+    .owl-demo3-descr{
+        width: 100%;
+        display: block;
+    }
+    #personal-account-history .owl-theme .owl-controls .owl-buttons div.owl-prev,
+    #personal-account-history .owl-theme .owl-controls .owl-buttons div.owl-next{
+        top: 100px;
     }
 }
 @media (max-width: 991px){
@@ -4035,7 +4157,7 @@ body#personal-account-favorite{
     .watched-products{
         border: none;
         height: auto;
-        margin: 0;
+        margin: 60px 0;
     }
     .watched-products-title{
         text-align: center;
@@ -4182,6 +4304,65 @@ body#personal-account-favorite{
     .pop-up_about-booking_block{
         width: 110%
     }
+    .personal-account_header-bottom{
+        margin-top: 15px;
+        height: 212px;
+    }
+    .personal-account-main_content-info,
+    .personal-account-pet-main_content-info, 
+    .personal-account-kennel-main_content-info{
+        width: 100%;
+    }
+    .account_hidden-input,
+    .personal-account-main_content-info_password div span input{
+        width: 75%;
+    }
+    .personal-account-basket-main_content_top-img img:first-child{
+        width: 100px;
+    }
+    .personal-account-basket-main_content_top-img img:nth-child(2) {
+        width: 180px;
+    }
+    .personal-account-basket-main_content_top-img img:nth-child(3) {
+        width: 85px;
+    }
+    .personal-account-basket-main_content-inside_title{
+        display: none;
+    }
+    .personal-account-basket-main_content-inside_bottom>a{
+        display: block;
+        text-align: center;
+        float: none;
+        margin: 20px;
+    }
+    .personal-account-basket-main_content-inside_bottom_block{
+        display: block;
+        margin: 10px;
+        float: none;
+    }
+    .personal-account-basket-main_content-inside_single-product_price{
+        margin-top: 35px;
+    }
+    .personal-account-favorite-main_content_favorite-product-img{
+        width: 100%;
+        display: block;
+        height: 170px;
+    }
+    .personal-account-favorite-main_content_favorite-product-img img{
+        position: relative;
+        max-height: 150px;
+    }
+    .personal-account-favorite-main_content_favorite-product-descr{
+        width: 100%;
+        display: block;
+    }
+    .personal-account-favorite-main_content_favorite-product-descr_about_weight {
+        right: -5px;
+    }
+    .personal-account-pet-main_content-info_pet-type,
+    .personal-account-pet-main_content-info_son-daughter{
+        float: none !important;
+    }
 }
 @media (max-width: 900px){
     .pop-up_basket-inside_title span:first-child{
@@ -4189,6 +4370,9 @@ body#personal-account-favorite{
     }
 }
 @media (max-width: 768px){
+    .main{
+        margin-bottom: 0;
+    }
     .index_main_btn:first-child{
         padding-left: 0;
         padding-right: 35px;
@@ -4291,6 +4475,63 @@ body#personal-account-favorite{
         margin: 120px auto 10px;
         float: none;
     }
+    .personal-account-main_left-column{
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    .personal-account-main_left-column_sticky{
+        border: none;
+    }
+    .personal-account-basket-main_content-inside_title{
+        display: block;
+    }
+    .personal-account-basket-main_content-inside_single-product-hide{
+        right: -35px;
+        top: 0px;
+        font-size: 30px;
+        width: 30px;
+        height: 30px;
+        padding-left: 7px;
+    }
+    .personal-account-basket-main_content-inside_single-product_kol input{
+        height: 50px;
+        width: 50px;
+    }
+    .personal-account-basket-main_content-inside_single-product_price{
+        margin-left: 4%;
+    }
+    .personal-account-basket-main_content-inside_title span:first-child{
+        margin-right: 10%;
+        margin-left: 13%;
+    }
+    .personal-account-basket-main_content-inside_bottom_block{
+        float: right;
+    }
+    .personal-account-favorite-main_content_favorite-products{
+        border: none;
+    }
+    .personal-account-favorite-main_content_favorite-product{
+        border: none;
+        margin-bottom: 20px;
+    }
+    .personal-account-favorite-main_content_favorite-product-descr{
+        text-align: center;
+        margin-top: 50px;
+    }
+    .owl-demo3-descr{
+        text-align: center;
+    }
+    .personal-account-pet-main_content-info_pet-type, 
+    .personal-account-pet-main_content-info_son-daughter{
+        float: right !important;
+    }
+    .personal-account-history-main_content_progressbars{
+        padding: 0 30px;
+    }
+    .personal-account-history-main_content_progressbar_dog-main,
+    .personal-account-history-main_content_progressbar_cat-main{
+        margin: 60px 0 100px;
+    }
 }
 @media (max-width: 677px){
     .b-popup .index-popup-content {
@@ -4340,6 +4581,22 @@ body#personal-account-favorite{
     .popup-tabs-btn div:first-child{
         margin-right: 0;
     }
+    .personal-account-basket-main_content-inside_single-product{
+        width: 100%;
+    }
+    .personal-account-basket-main_content-inside_single-product_descr{
+        display: none;
+    }
+    .personal-account-basket-main_content-inside_single-product_main-img{
+        margin-right: 12%;
+    }
+    .personal-account-basket-main_content-inside_single-product_price {
+        margin-left: 13%;
+        margin-top: 45px;
+    }
+    .main-pagination {
+        left: 29%;
+    }
 }
 @media (max-width: 530px) and (min-width: 435px){
     .fixed_menu.fixed{
@@ -4350,8 +4607,15 @@ body#personal-account-favorite{
         min-width: 239px;
         padding: 12px 10px;
     }
+    .personal-account-basket-main_content-inside_title span:first-child{
+        margin-right: 20%;
+    }
 }
 @media (max-width: 530px){
+    .breadcrumbs{
+        position: relative;
+        top: 0;
+    }
     .index_main_btn:first-child{
         width: 100%
     }
@@ -4368,8 +4632,59 @@ body#personal-account-favorite{
     .b-popup-content_input input{
         width: 60%;
     }
+    .personal-account-main_content-info{
+        margin-bottom: 45px;
+    }
+    .personal-account-main_content-info div span:first-child, 
+    .personal-account-pet-main_content-info div span:first-child, 
+    .personal-account-kennel-main_content-info div span:first-child{
+        display: block;
+        width: 100%;
+        height: 30px;
+    }
+    .account_hidden-input,
+    .personal-account-main_content-info_password div span input{
+        width: 100%;
+    }
+    .personal-account-main_content-info.personal-account-main_content-info_tel div,
+    .personal-account-main_content-info>div+span,
+    .personal-account-pet-main_content-info>div+span, 
+    .personal-account-kennel-main_content-info>div+span{
+        margin-bottom: 40px;
+    }
+    .personal-account-basket-main_content-inside_title{
+        display: none;
+    }
+    .personal-account-basket-main_content-inside_single-product_price{
+        margin-left: 15px;
+        font-size: 30px;
+    }
+    .personal-account-basket-main_content-inside_single-product_main-img{
+        margin-right: 5%;
+    }
+    .personal-account-basket-main_content-inside_single-product-hide{
+        right: 0;
+    }
+    .personal-account-basket-main_content-inside_bottom_block a,
+    .personal-account-basket-main_content-inside_bottom>a {
+        font-size: 20px;
+        white-space: nowrap;
+    }
+    .personal-account-basket-main_content-inside{
+        padding: 10px 5px 20px;
+    }
+    .personal-account-pet-main_content-info_pet-type, 
+    .personal-account-pet-main_content-info_son-daughter {
+        float: none !important;
+    }
+    .main-pagination {
+        left: 25%;
+    }
 }
 @media (max-width: 435px){
+    .breadcrumbs{
+        margin-top: 95px;
+    }
     .b-popup .index-popup-content{
         padding: 20px 15px 40px;
     }
@@ -4439,6 +4754,9 @@ body#personal-account-favorite{
          margin: 15px 16% 0;
          padding: 7px 14px;
     }
+    .single-product{
+        margin-top: 40px;
+    }
     .single-product_main_price{
         font-size: 30px;
     }
@@ -4464,5 +4782,24 @@ body#personal-account-favorite{
     }
     .pop-up_basket-inside_bottom_block{
         width: 106%;
+    }
+    .personal-account-main_content .personal-account-main_content_title h2+span{
+        font-size: 22px;
+    }
+    .personal-account-main_content-info_tel div:first-child .account_hidden-input:first-child{
+        margin-top: 0;
+    }
+    .personal-account-basket-main_content_top-img img:first-child,
+    .personal-account-basket-main_content_top-img img:nth-child(3){
+        display: none;
+    }
+    .personal-account-basket-main_content-inside_bottom_block {
+        float: none;
+    }
+    .nice-select.personal-account-pet-main_content-info_select-type{
+        width: 260px;
+    }
+    .main-pagination {
+        left: 20%;
     }
 }
