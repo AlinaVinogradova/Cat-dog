@@ -797,35 +797,37 @@ ol ol {
 .header-top_telephone2{
     color: #fff;
     float: right;
-    font-size: 11px;
-    margin-right: 15px;
+    font-size: 14px;
+}
+.header-top_telephone2 span{
+    white-space: nowrap;
 }
 .header-top_animal-img{
-    width: 55px; 
-    height: 54px;
+    width: 59px; 
+    height: 59px;
     background: url(../images/sprite/sprite.png) no-repeat;
     background: url(../images/sprite/sprite.svg) no-repeat;
-    background-size: 300px;
-    margin: 5px 3px;
+    background-size: 335px;
+    margin: 0px 3px;
 }
 .header-top_dog{
-    background-position: 3px -135px;
+    background-position: 0px -152px;
 }
 /*
 .header-top_dog:hover{
-    background-position: -74px -135px;
+    background-position: -84px -152px;
 }
 */
 .header-top_cat{
-    background-position: -74px -195px;
+    background-position: -84px -218px;
 }
 /*
 .header-top_cat:hover{
-    background-position: 3px -195px;
+    background-position: 0x -218px;
 }
 */
 .header-top_animal-imgs{
-    margin: 3px 0 34px;
+    margin: 0px 0 14px;
 }
 .header-top_animal-imgs div{
     display: inline-block;
@@ -895,7 +897,10 @@ ol ol {
 .header-top_set>ul{padding: 0; margin-top: 6px}
 .header-top_set>ul>li{margin: 0 20px; position: relative; padding-bottom: 11px;}
 .header-top_set>ul>li:nth-child(3){margin: 0}
-.header-top_set>ul>li:last-child{margin-left: 4px;}
+.header-top_set>ul>li:last-child{
+    margin-left: 4px;
+    margin-right: 0;
+}
 .header-top_set>ul>li:last-child img{
     width: 40px;
     margin-top: -18px;
@@ -965,7 +970,7 @@ ol ol {
 .fixed_menu.fixed .header-middle>ul:last-child{
     padding-left: 6px;
     border-radius: 0 0 10px 0;
-    margin-top: -89px;
+    margin-top: -87px;
 }
 /*.fixed_menu.fixed .languages ul{margin-bottom: 0}*/
 .fixed_menu.fixed .header-top_set{padding-bottom: 10px}
@@ -976,6 +981,9 @@ ol ol {
     position: relative;
     border-bottom: 2px solid #2c0b00;
     margin-top: -14px;
+}
+.header-middle>ul:first-child{
+    width: 430px;
 }
 .header-middle>ul:first-child:before,
 .header-middle>ul:last-child:before{
@@ -1258,11 +1266,13 @@ ul.header-top_submenu li a{
     font-weight: 600;
     text-decoration: none;
     color: #2c0b00;
+    font-size: 16px;
+    font-family: Algerius;
 }
 .breadcrumbs span{
     position: relative;
     width: 20px;
-    height: 1px;
+    height: 2px;
     background: #000;
     display: inline-block;
     margin: 0 10px 4px;
@@ -1275,7 +1285,7 @@ ul.header-top_submenu li a{
     height: 0;
     border: 3px solid transparent; 
     border-right: 0;
-    top: -3px;
+    top: -2px;
     right: -2px;
     border-left-color: #000;  
 }
@@ -1881,6 +1891,9 @@ body#single-product .watched-products{
     position: absolute; 
     font-size: 20px;
     top: -23px;
+}
+.personal-account-pet-main_content-info_date-of-birth .nice-select.personal-account-pet-main_content-info_select-type .current{
+    top: 0;
 }
 .select-line-current{
     position: absolute;
@@ -3058,6 +3071,7 @@ body#personal-account-favorite{
     font-size: 24px;
 }
 .personal-account-main_content-info>div>span:last-child,
+.personal-account-main_content-info>div>span.personal-account-main_content-info_tel-second-span,
 .personal-account-pet-main_content-info>div>span:last-child,
 .personal-account-kennel-main_content-info>div>span:last-child{
     float: right;
@@ -3067,7 +3081,10 @@ body#personal-account-favorite{
     font-size: 19px;
     cursor: pointer;
 }
-.personal-account-main_content-info_tel div span input{
+.personal-account-main_content-info_tel div{
+    position: relative;
+}
+.personal-account-main_content-info_tel div span.personal-account-main_content-info_tel-second-span input{
     border: 2px solid #d5d0cc;
     background: none;
     width: 85%;
@@ -3078,12 +3095,30 @@ body#personal-account-favorite{
 .personal-account-main_content-info_tel div:last-child{
     height: 40px;
 }
-.personal-account-main_content-info_tel div:last-child span:last-child{
+.personal-account-main_content-info_tel div:last-child span.personal-account-main_content-info_tel-second-span{
     padding-top: 15px;
     color: #d5d5d5;
 }
-.personal-account-main_content-info_tel div:nth-child(3) span:last-child{
+.personal-account-main_content-info_tel div:nth-child(3) span.personal-account-main_content-info_tel-second-span{
     padding-top: 15px;
+}
+.personal-account-main_content-info_tel-hide{
+    border-radius: 50%;
+    color: #f5f3f1;
+    position: absolute;
+    right: -30px;
+    top: 9px;
+    background: #301207;
+    font-size: 20px;
+    font-weight: 100;
+    width: 20px;
+    text-decoration: none;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 4px;
+}
+.personal-account-main_content-info_tel-second-hide{
+    top: 15px;
 }
 .personal-account-main_content-info>div+span,
 .personal-account-pet-main_content-info>div+span,
@@ -3750,21 +3785,28 @@ body#personal-account-favorite{
 }
 
 @media (min-width: 1300px){
-    
+    .header-top_set{
+        margin-right: -18px;
+    }
     .header-top_set>ul>li{
         margin: 0 9px;
     }
     .header-top_set>ul{
         margin-right: -10px;
     }
+    .header-top_telephone2{
+        margin-right: -20px;
+    }
 }
 @media (max-width: 1300px){
-    /*.container.menu-for-big-monitor{width: auto;}
+/*    .container.menu-for-big-monitor{width: 966px;}*/
 
+/*
     .languages{
         margin-left: 30px;
     }
 */
+
     .header-middle>ul>li>a{
         margin: 0 7px;
     }
@@ -3778,7 +3820,7 @@ body#personal-account-favorite{
         margin-right: -8px;
     }
     .fixed_menu.fixed .header-middle ul:first-child {
-        padding-right: 27px;
+        padding-right: 28px;
     }
     .b-popup-content.tab-registr{
         width: 50%;
@@ -3824,6 +3866,12 @@ body#personal-account-favorite{
   }
 }
 @media (max-width: 1200px){
+    .header-middle>ul:first-child{
+        width: 355px;
+    }
+    .header-top_set{
+        margin: 16px 0 16px 3px;
+    }
     .b-popup .index-popup-content{
         width: 50%;
     }
@@ -3975,6 +4023,9 @@ body#personal-account-favorite{
     }
 }
 @media (max-width: 1200px){
+    .header-top_animal-imgs{
+        margin-left: -45px;
+    }
     .footer-bottom_col2-appstore{
         left: 37px;
     }
@@ -4053,6 +4104,20 @@ body#personal-account-favorite{
         top: 100px;
     }
 }
+@media (max-width: 1010px) and (min-width: 990px){
+     .header-middle ul:last-child {
+        margin-right: -5px;
+    }
+    .container menu-for-big-monitor{
+        margin-left: -12px;
+    }
+    .header-middle{
+        margin-left: 12px;
+    }
+    .header-top_animal-imgs{
+        margin-left: -30px;
+    }
+}
 @media (max-width: 991px){
     .index_main_btn:first-child {
         left: 15px;
@@ -4096,7 +4161,7 @@ body#personal-account-favorite{
         height: 120px;
     }
     .header-top_telephone{width: 35%}
-    .header-top_telephone2{width: 35%; text-align: right;}
+    .header-top_telephone2{width: 100%; text-align: right;}
     .header-top_telephone2{
         margin-right: 0;
     }
@@ -4200,9 +4265,11 @@ body#personal-account-favorite{
         display: block;
         text-align: center;
     }
+/*
     .nice-select.open .list{
         width: 270px;
     }
+*/
     .select-line-current{
         left: 60px;
     }
@@ -4532,6 +4599,9 @@ body#personal-account-favorite{
     .personal-account-history-main_content_progressbar_cat-main{
         margin: 60px 0 100px;
     }
+    .personal-account-main_content-info_tel div {
+        width: 95%;
+    }
 }
 @media (max-width: 677px){
     .b-popup .index-popup-content {
@@ -4612,6 +4682,9 @@ body#personal-account-favorite{
     }
 }
 @media (max-width: 530px){
+    .header-top_telephone2{
+        font-size: 12px;
+    }
     .breadcrumbs{
         position: relative;
         top: 0;
