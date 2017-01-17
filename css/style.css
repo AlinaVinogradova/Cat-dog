@@ -799,7 +799,7 @@ ol ol {
     float: right;
     font-size: 14px;
 }
-.header-top_telephone2 span{
+.header-top_telephone2 .header-top_telephone2_span{
     white-space: nowrap;
 }
 .header-top_animal-img{
@@ -1432,14 +1432,16 @@ ul.header-top_submenu li a{
 .single-prod_btn{
     background: url(../images/sing-btn-bg.png) no-repeat;
     color: #fff;
-    height: 58px;
-    margin-top: 15px;
+    background-size: 100% 94%;
+    height: 52px;
+    margin: 0 10px;
+    margin-top: 45px;
     font-size: 12px;
-    padding: 4px 3px;
+    padding: 9px 3px 4px 16px;
     font-style: italic;
 }
 .single-prod_btn img{
-    padding: 12px 5px;
+    padding: 1px 5px;
     margin-right: 0px;
     width: 40px;
 }
@@ -3939,9 +3941,6 @@ body#personal-account-favorite{
     .single-prod_weight{
         float: right;
     }
-    .single-prod_btn{
-        background-size: 202px;
-    }
     .single-prod_btn img{display: none}
     .footer-recomendation h3{font-size: 16px}
     .footer-recomendation{margin-bottom: 0}
@@ -4217,7 +4216,8 @@ body#personal-account-favorite{
         float: none;
     }
     .single-prod_btn{
-        background-size: 204px;
+        height: 60px;
+/*        background-size: 204px;*/
     }
     .watched-products{
         border: none;
@@ -4492,11 +4492,13 @@ body#personal-account-favorite{
     .single-prod_about{
         width: 60%;
     }
+/*
     .single-prod_btn{
         background-size: 100%;
         margin: 15px 15% 0 15%;
         min-width: 209px;
     }
+*/
     .main{margin-top: 0}
     #tab_4 .tab_4_table1 tbody tr td:last-child div{
         height: 105px;
@@ -4672,11 +4674,13 @@ body#personal-account-favorite{
     .fixed_menu.fixed{
         height: 120px;
     }
+/*
     .single-prod_btn{
         margin: 15px 23% 0;
         min-width: 239px;
         padding: 12px 10px;
     }
+*/
     .personal-account-basket-main_content-inside_title span:first-child{
         margin-right: 20%;
     }
@@ -4823,10 +4827,12 @@ body#personal-account-favorite{
     .checkbox:not(checked) + label:after{
         left: 30%;
     }
+/*
     .single-prod_btn{
          margin: 15px 16% 0;
          padding: 7px 14px;
     }
+*/
     .single-product{
         margin-top: 40px;
     }
