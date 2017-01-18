@@ -1149,6 +1149,110 @@ ul.header-top_submenu li a{
     text-align: center;
     color: #727030;
 }
+.account-menu{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    border: none;;
+    background: url(../images/sing-btn-bg.png) no-repeat;
+    background-size: 100% 100%;
+    white-space: nowrap;
+    display: inline-block;
+    height: 53px;
+    line-height: 50px;
+    width: 300px;
+    padding-left: 30px;
+    font-style: italic;
+    font-size: 24px;
+    margin: 25px 0 0;
+    position: relative;
+    outline: none;
+}
+.account-menu-btn{
+    display: none;
+}
+.account-menu:hover{
+    background: #e3c9a8;
+    color: #390b00;
+    border: 1px solid #e3c9a8;
+    border-radius: 10px;
+}
+.account-menu:hover .account-menu-btn{
+    display: block;
+    position: absolute;
+    background: #fff;
+    color: #390b00;
+    width: 50%;
+    left: -2px;
+    top: 52px;
+    z-index: 1;
+    font-family: MinionPro;
+    border: 1px solid;
+}
+body#personal-account:hover .account-menu_content{
+ display: none;
+}
+.account-menu-btn1,
+.account-menu-btn2{
+    display: block;
+    margin: 10px 0px 5px;
+    padding: 0 10px;
+    color: #390b00;
+    font-size: 20px;
+    font-style: normal;
+}
+.account-menu-btn1:hover,
+.account-menu-btn2:hover,
+.account-menu-btn div.active{
+    color: #e3c9a8;
+    background: #390b00;
+}
+.account-menu_content{
+    display: none;
+    font-family: MinionPro;
+}
+.account-menu-tab_ul{
+    border: 1px solid;
+    padding: 10px;
+    z-index: 1;
+    position: absolute;
+    background: #fff;
+    width: 350px;
+    top: 52px;
+    right: -198px;
+    list-style-type: none;
+    font-size: 20px;
+}
+.account-menu-tab_ul li{
+    display: inline-block;
+    width: 49%;
+    margin: 0 0.5%;
+    vertical-align: text-top;
+    float: left;
+    font-weight: 600;
+}
+.account-menu-tab_ul li a{
+    text-decoration: none;
+    color: #390b00;
+    font-style: normal;
+    font-size: 20px;
+}
+.account-menu-tab_submenu{
+    list-style-type: none;
+    font-size: 16px;
+    padding: 0;
+}
+.account-menu-tab_submenu li{
+    display: block;
+    margin: -15px 0;
+    float: none;
+}
+.account-menu-tab_submenu li a{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
 .header-bottom #owl-demo2{
     position: absolute;
     top: 35px;
@@ -1394,13 +1498,28 @@ ul.header-top_submenu li a{
     margin-top: 50px;
     position: relative;
 }
+.main_content .row{
+    border-bottom: 2px solid;
+    border-image: url(../images/bottom-border.png) 180;
+    padding-bottom: 30px;
+}
 .single-product{
     color: #2c0b00;  
     margin: 35px 0 0;
 }
-.single-product img{
+.single-product:nth-child(1n+2){
+    border-left: 2px solid;
+    border-image: url(../images/left-border.png) 180;
+}
+.single-product-img{
+    display: inline-block;
     float: left;
     margin-right: 15px;
+    width: 45%;
+}
+.single-product-img img{
+    max-width: 100%;
+    max-height: 240px;
 }
 .single-product h3{
     margin: 0; 
@@ -1416,9 +1535,14 @@ ul.header-top_submenu li a{
     display: inline-block;
     padding-bottom: 5px;
     font-family: Algerius;
+    margin: 15px 0;
 }
 .single-prod_about *{display: inline; font-weight: 600}
-.single-prod_price{color: #e74c3c; margin-right: 20px;}
+.single-prod_price{
+    color: #e74c3c; 
+    margin-right: 20px;
+    font-size: 25px;
+}
 .single-product p{
   margin: 10px 0;
   text-overflow: 
@@ -1439,11 +1563,13 @@ ul.header-top_submenu li a{
     font-size: 12px;
     padding: 9px 3px 4px 16px;
     font-style: italic;
+    width: 100%;
 }
 .single-prod_btn img{
     padding: 1px 5px;
     margin-right: 0px;
     width: 40px;
+    float: left;
 }
 
 /*WATCHED PRODUCTS*/
@@ -3930,13 +4056,15 @@ body#personal-account-favorite{
         height: 317px;
     }
     .single-product h3{
-        margin: 40px 0;
+        margin: 40px 0 20px;
     }
     .single-prod_about{
-        width: 85%;
+        width: 45%;
+        margin: 0;
     }
     .single-prod_price{
         float: left;
+        font-size: 18px;
     }
     .single-prod_weight{
         float: right;
@@ -4020,8 +4148,6 @@ body#personal-account-favorite{
     .personal-account-favorite-main_content_favorite-product-descr_about_weight{
         right: -32px;
     }
-}
-@media (max-width: 1200px){
     .header-top_animal-imgs{
         margin-left: -45px;
     }
@@ -4215,9 +4341,16 @@ body#personal-account-favorite{
     .single-product>img{
         float: none;
     }
+    .single-product-img{
+        width: 100%;
+    }
+    .single-prod_about{
+        width: 100%;
+    }
     .single-prod_btn{
         height: 60px;
-/*        background-size: 204px;*/
+        width: 100%;
+        margin: 0;
     }
     .watched-products{
         border: none;
@@ -4698,6 +4831,10 @@ body#personal-account-favorite{
     }
     .index_main_btn:nth-child(2){
         width: 100%;
+    }
+    .single-product:nth-child(1n+2),
+    .main_content .row{
+        border: none;
     }
     .tab_3-icos2>div{
         text-align: center

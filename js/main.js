@@ -207,7 +207,21 @@ $('div.about-single-product div').click(function(){
       $(this).addClass('active');
       $('.tabs_content').hide();
       $('#tab_'+ id).fadeIn(400);
-});  
+});
+    
+    
+//Account menu TAB
+$('div.account-menu-btn div').click(function(){
+      var id = $(this).data('id');
+     $('div.account-menu-btn div').removeClass('active');
+      $(this).addClass('active');
+      $('.account-menu_content').hide();
+      $('#account-menu-tab_'+ id).fadeIn(100);
+});
+$('.account-menu').hover(function(){
+    }, function(){
+    $('.account-menu_content').css("display", "none");
+});
     
     //BASKET PLUS MINUS
     $('.minus').click(function () {
