@@ -60,6 +60,48 @@ $(document).ready(function() {
           rewindNav : true,
           scrollPerPage : false,
       });
+    $(".owl-demo5").owlCarousel({
+      navigation : false, // показывать кнопки next и prev 
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      items : 1, 
+      itemsDesktop : false,
+      itemsDesktopSmall : false,
+      itemsTablet: false,
+      itemsMobile : false
+  });
+    $(".owl-demo6").owlCarousel({
+      items : 2,
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      pagination : false,
+      paginationNumbers: false,
+      navigation : true,
+      navigationText : [" "," "],
+      rewindNav : true,
+      scrollPerPage : false,
+  });
+    $(".owl-demo7").owlCarousel({
+      navigation : false, // показывать кнопки next и prev 
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      items : 1, 
+      itemsDesktop : false,
+      itemsDesktopSmall : false,
+      itemsTablet: false,
+      itemsMobile : false
+  });
+    $(".owl-demo8").owlCarousel({
+      items : 2,
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      pagination : false,
+      paginationNumbers: false,
+      navigation : true,
+      navigationText : [" "," "],
+      rewindNav : true,
+      scrollPerPage : false,
+  });
             
 //FIXED MENU
         var $menu = $(".fixed_menu");
@@ -196,8 +238,12 @@ function Ascroll() {
 
 //NiceSelect
 $('.personal-account-pet-main_content-info_select-type').niceSelect();           
-//var selectLine = '<div class="select-line-current">'
-//$('.single-product_main_select  span.current').html(selectLine);
+var selectLine = '<div class="select-line-current">'
+$('.single-product_main_select  span.current').html(selectLine);
+    
+    $('select.single-product_main_select').niceSelect();           
+var selectLine = '<div class="select-line-current">'
+$('.single-product_main_select  span.current').html(selectLine);
             
             
 //Single product TAB
@@ -221,6 +267,7 @@ $('div.account-menu-btn div').click(function(){
 $('.account-menu').hover(function(){
     }, function(){
     $('.account-menu_content').css("display", "none");
+    $('div.account-menu-btn div').removeClass('active');
 });
     
     //BASKET PLUS MINUS
