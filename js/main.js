@@ -314,10 +314,8 @@ $('.account-menu').hover(function(){
         event.preventDefault();
 
         if ($('.nice-select .current div').hasClass('select-line-current')) {
-            alert("Заполните поля");
           }
         else{
-            alert('Поля заполнены');
             var title = $('.single-product_main').data('title'),
                 id = $('.single-product_main').data('id'),
                 price = $('.single-product_main_price').html(),
@@ -329,11 +327,9 @@ $('.account-menu').hover(function(){
                 url: "",
                 data: {data, data2, data3, title, id},
                 error: function(){
-                    alert('error');
                     $(".nice-select .current").html("<div class='select-line-current'></div>");
                     },
                 success: function(data){
-                    alert('success');
                     $(".nice-select .current").html("<div class='select-line-current'></div>");
                     $('.header-top_set>ul>li:last-child img+span.top-backet-span').css('display', 'inline-block');
                 }
@@ -421,7 +417,8 @@ $('.account-menu').hover(function(){
 		});
     });
     
-    $('.single-prod_btn').click(function(){
+    $('.buy-click').click(function(event){
+        event.preventDefault();
 		jQuery.ajax({
 			url: '../pop-up/booking.html',
             cache: false, 
