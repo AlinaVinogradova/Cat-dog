@@ -32,6 +32,7 @@
                     <div class="b-popup-content_input"><span>Пароль</span><input type="pass"></div>
                     <span class="b-popup-content_input_sumb">стандартный текст про кол-во символов и все такое</span>
                     <div class="b-popup-content_input"><span>Підтвердити<br>пароль</span><input type="pass"></div>
+                    <div class="b-popup-content_inner-block_input_mistake">Неверно заполнены поля</div>
                     <div class="popup-tabs_content_bottom-inf">
                         <p>На вказану пошту буде надіслано лист з номером броні  та умовами бронювання. У разі будь-яких змін або уточнень, будь ласка, зателефонуйте менеджеру: </p>
                         <div>+38 (044) 221 88 20;   +38 (098) 080 50 20; </div>
@@ -50,30 +51,10 @@
                             <div>*Для Київа</div>
                         </div>
                         <div class="popup-tabs_content_right-col_titile">Адреса  доставки </div>
-                        <select name="region">
-                            <option>Область </option>
-                            <option value="">Київська</option>
-                            <option value="">Львiвска</option>
-                            <option value="">Харкiвска</option>
-                        </select>
-                        <select name="city">
-                           <option>Місто </option>
-                            <option value="">Київ</option>
-                            <option value="">Львiв</option>
-                            <option value="">Харкiв</option>
-                        </select>
-                        <select name="street">
-                           <option>Вулиця </option>
-                            <option value="">Гоголя</option>
-                            <option value="">Римарська</option>
-                            <option value="">Павлова</option>
-                        </select>
-                        <select name="house">
-                           <option>Будинок</option>
-                            <option value="">1</option>
-                            <option value="">2</option>
-                            <option value="">3</option>
-                        </select>
+                        <input type="text" class="popup-tabs_content_right-col-addr" placeholder="Область">
+                        <input type="text" class="popup-tabs_content_right-col-addr" placeholder="Мiсто">
+                        <input type="text" class="popup-tabs_content_right-col-addr" placeholder="Вулиця">
+                        <input type="text" class="popup-tabs_content_right-col-addr" placeholder="Будинок">
                    </div>
               </div>
                 <input type="submit" value="Забронювати" class="popup-tabs_content_submit">
@@ -92,30 +73,10 @@
                             <div>*Для Київа</div>
                         </div>
                         <div class="popup-tabs_content2_left-col_titile">Адреса  доставки </div>
-                        <select name="region">
-                            <option>Область </option>
-                            <option value="">Київська</option>
-                            <option value="">Львiвска</option>
-                            <option value="">Харкiвска</option>
-                        </select>
-                        <select name="city">
-                           <option>Місто </option>
-                            <option value="">Київ</option>
-                            <option value="">Львiв</option>
-                            <option value="">Харкiв</option>
-                        </select>
-                        <select name="street">
-                           <option>Вулиця </option>
-                            <option value="">Гоголя</option>
-                            <option value="">Римарська</option>
-                            <option value="">Павлова</option>
-                        </select>
-                        <select name="house">
-                           <option>Будинок</option>
-                            <option value="">1</option>
-                            <option value="">2</option>
-                            <option value="">3</option>
-                        </select>
+                        <input type="text" class="popup-tabs_content2_left-col-addr" placeholder="Область">
+                        <input type="text" class="popup-tabs_content2_left-col-addr" placeholder="Мiсто">
+                        <input type="text" class="popup-tabs_content2_left-col-addr" placeholder="Вулиця">
+                        <input type="text" class="popup-tabs_content2_left-col-addr" placeholder="Будинок">
                    </div>
                    <div class="col-md-7 col-lg-7 col-sm-7 popup-tabs_content2_right-col">
                        <div><a href="">Авторизуйтесь,</a><br> якщо ви не здійснили вхід</div>
