@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Personal account</title>
+    <title>registration</title>
     <link rel="stylesheet" href="css/style.css">
     
     <script src="js/jquery-2.4.4.js"></script>
     <script src="owl-carousel/owl.carousel.js"></script>
     <script src="js/jquery.nice-select.js"></script>
-    <script src="js/main.js"> </script>
+    <script src="js/tcal.js"></script>
+    <script src="js/main.js"></script>
 </head>
-<body id="personal-account-pet">
-    <div class="wrapper">
+<body>
+ <div class="wrapper">
   <div class="content1">
-     <div id="preloader"></div>
+  <div id="preloader"></div>
+   <div class="body-bg-top"></div>
+   <div class="body-bg-bottom"></div>
     <div class="top-bg">
        <div class="fixed_menu default">
        <div class="container menu-for-big-monitor">
@@ -27,7 +30,7 @@
               </div>
                <div>
                    <a href="" class="header-top_animal-img header-top_cat"></a>
-               </div>
+                </div>
             </div> 
 <!--
             <div class="languages">
@@ -106,131 +109,33 @@
         </div>
         </div>
         </div>
-        <div class="container">
-            <div class="personal-account_header-bottom hidden-xs">
-                Шановний Iван Iваненко,вiтаемо Вас в персональному кабiнетi<br>нашого iнтернет-магазину. Бажаемо Вам вдалих покупок,<br>та мiцного здоров'я вашим чотирилапим улюбленцям.
-            </div>
-        </div>
         
-        <div class="container personal-account-main">
-       <div class="row">
-           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 col-xxs-12 personal-account-main_left-column">
-           <div class="personal-account-main_left-column_sticky">
-            <h3>Особистий<br>кабiнет</h3>
-                <ul class="personal-account-main_left-column_ul">
-                    <li><a href="http://dev6.room314.ru/account.html">Персональна<br>iнформацiя</a></li>
-                    <li><a href="http://dev6.room314.ru/account-kennel.html" class="active">Iнформацiя<br>про моiх тварин</a></li>
-                    <li><a href="http://dev6.room314.ru/account-kennel.html">Iнформацiя<br>про розплiдник</a></li>
-                    <li><a href="http://dev6.room314.ru/account-history.html">Iсторiя покупок</a></li>
-                    <li><a href="http://dev6.room314.ru/account-favorite.html">Улюбленi товари</a></li>
-                    <li><a href="http://dev6.room314.ru/account-basket.html">Кошик</a></li>
-                    <li><a href="">Отпримати<br>консультацiю</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-lg-10 col-md-9 col-sm-8 col-xs-12 col-xxs-12 personal-account-pet-main_content">
-            <div class="personal-account-pet-main_content_title"><h2>Iнформацiя про моiх тварин</h2></div>
-            <div class="personal-account-pet-main_content-photo col-lg-2 col-md-2 col-sm-2">Додати фото</div>
-            <div class="personal-account-pet-main_content-infos col-lg-10 col-md-10 col-sm-10">
-                <div class="personal-account-pet-main_content-info">
-                    <h2>Кличка*</h2>
+        <div class="container registratin">
+                <div class="registratin-block">
+                    <h2>Вiтаемо Вас<br> на нашй домашнiй кухнi</h2>
+                    <p>Зарееструвавшись, Ви Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
+                    <div class="registratin-block_input"><span>Ім’я*</span><input type="text"></div>
+                    <div class="registratin-block_input"><span>Фамілія*</span> <input type="text"></div>
+                    <div class="registratin-block_input"><span>Телефон*</span> <input type="tel"></div>
+                    <div class="registratin-block_input"><span>Е-mail*</span><input type="email"></div>
+                    <div class="registratin-block_input"><span>Логін</span><input type="text"></div>
+                    <div class="registratin-block_input"><span>Пароль</span><input type="pass"></div>
+                    <span class="registratin-block_input_sumb">стандартный текст про кол-во символов и все такое</span>
+                    <div class="registratin-block_input"><span>Підтвердити<br>пароль</span><input type="pass"></div>
+                    <div class="registratin-block_input_mistake">Неверно заполнены поля</div>
+                </div>
+                <div class="registratin-content_bottom">Реєструючись, Ви автоматично погоджуєтесь з <a href="">угодою користувача</a><br> * Зазначені поля не відображатимуться для інших користувачів,  але вони обов’язкові для заповненнтя, тому що потрібні нам для найбільш якісного обслуговування Вас в нашому інтернет-магазині.</div>
+                <div class="registratin-bottom">
+                    <input type="submit" value="Зареєструватись">
+                    <div>або</div>
                     <div>
-                        <span></span>
-                        <input type="text" class="account_hidden-input">
-                        <span>Редагувати</span>
+                        <a href=""><div class="registratin_soc-icons registratin_soc-icons-face"></div></a>
+                        <a href=""><div class="registratin_soc-icons registratin_soc-icons-vk"></div></a>
                     </div>
-                    <p class="personal-account-main_content_mistake">Неверно заполнены поля</p>
-                </div>
-                <div class="personal-account-pet-main_content-info">
-                    <h2>Вид тварини*</h2>
-                         <span class="personal-account-pet-main_content-info_pet-type">
-                             <select class="personal-account-pet-main_content-info_select-type">
-                                 <option value=""></option>
-                                 <option value="dog">Собака</option>
-                                 <option value="cat">Кiшка</option>
-                             </select>
-                         </span>
-                </div>
-                <div class="personal-account-pet-main_content-info">
-                    <h2>Порода*</h2>
-                    <div>
-                        <span></span>
-                        <input type="text" class="account_hidden-input">
-                        <span>Редагувати</span>
-                    </div>
-                    <p class="personal-account-main_content_mistake">Неверно заполнены поля</p>
-                </div>
-                <div class="personal-account-pet-main_content-info personal-account-pet-main_content-info_date-of-birth">
-                    <h2>Дата народження улюбленця</h2>
-                        <span>
-                             <select class="personal-account-pet-main_content-info_select-type">
-                                 <option value="">День</option>
-                                 <option value="dog">1</option>
-                                 <option value="cat">2</option>
-                                 <option value="cat">3</option>
-                                 <option value="cat">4</option>
-                                 <option value="cat">5</option>
-                                 <option value="cat">6</option>
-                                 <option value="cat">7</option>
-                                 <option value="cat">8</option>
-                                 <option value="cat">9</option>
-                             </select>
-                         </span>
-                        <span>
-                             <select class="personal-account-pet-main_content-info_select-type">
-                                 <option value="">Мiсяц</option>
-                                 <option value="dog">Січень</option>
-                                 <option value="cat">Лютий</option>
-                                 <option value="cat">Березень</option>
-                                 <option value="cat">Квітень</option>
-                                 <option value="cat">Травень</option>
-                                 <option value="cat">Червень</option>
-                                 <option value="cat">Липень</option>
-                                 <option value="cat">Серпень</option>
-                                 <option value="cat">Вересень</option>
-                                 <option value="cat">Жовтень</option>
-                                 <option value="cat">Листопад</option>
-                                 <option value="cat">Грудень</option>
-                             </select>
-                         </span>
-                        <span>
-                             <select class="personal-account-pet-main_content-info_select-type">
-                                 <option value="">Рік</option>
-                                 <option value="dog">2000</option>
-                                 <option value="cat">2001</option>
-                                 <option value="cat">2002</option>
-                                 <option value="cat">2003</option>
-                                 <option value="cat">2004</option>
-                                 <option value="cat">2005</option>
-                             </select>
-                         </span>
-                </div>
-                 <div class="personal-account-pet-main_content-info">
-                    <h2>"Синок" чи "доця"</h2>
-                    <span class="personal-account-pet-main_content-info_son-daughter">
-                             <select class="personal-account-pet-main_content-info_select-type">
-                                 <option value=""></option>
-                                 <option value="dog">Синок</option>
-                                 <option value="cat">Доця</option>
-                             </select>
-                         </span>
-                </div>
-                 <div class="personal-account-pet-main_content-info">
-                    <h2>Додаткова iнформацiя</h2>
-                    <div>
-                        <textarea cols="30" rows="13"></textarea>
-                    </div>
-                </div>
-            </div>
+                 </div>
         </div>
-                 <div class="personal-account-pet-main_content-add-pet">
-                    <a href="">Додати улюбленця</a>
-                </div>
-       </div>
-   </div>
-        </div>
-        
-        <div class="footer">
+     </div>
+       <div class="footer">
         <div class="footer-bg hidden-xs">
             <div class="container footer-bottom">
                 <div class="row">
@@ -303,6 +208,8 @@
     <div class="b-popup b-popup-regist" style="display:none"></div>
     <div class="b-popup b-popup-enter" style="display:none"></div>
     <div class="b-popup b-popup-basket" style="display:none"></div>
-        </div>
+    <div class="b-popup b-popup-booking" style="display:none"></div>
+<!--    <div id="preloader-checkbox" style="display:none"></div>-->
+     </div>
 </body>
 </html>

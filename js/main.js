@@ -423,6 +423,10 @@ $('.account-menu').hover(function(){
 			url: '../pop-up/booking.html',
             cache: false, 
 			success: function(html){
+                
+                var script = '<script src="js/tcal.js"></script>';
+                $('head').append(script);
+                
 				$('.b-popup-booking').html(html).css('display', 'block');
                 $( ".popup-overlay" ).click(function() {
                       $('.b-popup.b-popup-booking').css('display', 'none');
@@ -480,8 +484,6 @@ $('.account-menu').hover(function(){
                     $(this).val('');
                   }
                 });
-                var script = '<script src="js/tcal.js"></script>';
-                $('head').append(script);
 			}
             
 
@@ -501,6 +503,24 @@ $('.account-menu').hover(function(){
         $(this).siblings('.account_hidden-input').toggleClass('account_show-input');
     });
 
-
+//FOR BASKET PAGE
+//Pop up корзина (количество)
+    $('.minus').click(function () {
+        var $input = $(this).parent().find('input');
+        var count = parseInt($input.val()) - 1;
+        count = count < 1 ? 1 : count;
+        $input.val(count);
+        $input.change();
+        return false;
+    });
+    $('.plus').click(function () {
+        var $input = $(this).parent().find('input');
+        $input.val(parseInt($input.val()) + 1);
+        $input.change();
+        return false;
+});
+    $('.basket-inside_single-product-hide').click(function(){
+        $(this).parent('.basket-inside_single-product').hide();
+    })    
     
 });
