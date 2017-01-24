@@ -1356,7 +1356,7 @@ body#personal-account:hover .account-menu_content{
     color: #fff;
 }
 .index-popup-top_dog {
-    background-position: -227px -438px;
+    background-position: -228px -438px;
 }
 .index-popup-top_dog:hover{
     background-position: -227px -608px;
@@ -5629,21 +5629,21 @@ body#cat-assortment{
         width: 60%;
     }
     .index-popup_animal-img{
-        width: 130px;
-        height: 130px;
+        width: 135px;
+        height: 135px;
         background-size: 730px;
     }
     .index-popup-top_dog {
-        background-position: -181px -330px;
+        background-position: -211px -403px;
     }
     .index-popup-top_dog:hover {
-        background-position: 1px -327px;
+        background-position: -209px -558px;
     }
     .index-popup-top_cat {
-        background-position: -181px -474px;
+        background-position: -375px -403px;
     }
     .index-popup-top_cat:hover {
-        background-position: 1px -474px;
+        background-position: -376px -559px;
     }
     .sticky {
       position: relative;
@@ -6316,21 +6316,21 @@ body#cat-assortment{
         font-size: 25px;
     }
     .index-popup_animal-img {
-        width: 108px;
-        height: 100px;
+        width: 103px;
+        height: 103px;
         background-size: 560px;
     }
     .index-popup-top_dog {
-        background-position:-131px -252px;
+        background-position:-162px -307px;
     }
     .index-popup-top_dog:hover {
-        background-position: 12px -252px;
+        background-position: -160px -425px;
     }
     .index-popup-top_cat {
-        background-position: -131px -364px;
+        background-position: -287px -307px;
     }
     .index-popup-top_cat:hover {
-        background-position: 12px -364px;
+        background-position: -288px -426px;
     }
     .single-prod_more {
         right: 32px;
@@ -6557,23 +6557,23 @@ body#cat-assortment{
     }
     .index-popup_animal-img {
         margin-left: 15px;
-        height: 85px;
+        height: 90px;
         background-size: 475px;
     }
     .index-popup-content h2{
         font-size: 21px;
     }
     .index-popup-top_dog {
-        background-position: -117px -214px;
+        background-position: -123px -257px;
     }
     .index-popup-top_dog:hover {
-        background-position: 3px -214px;
+        background-position: -123px -357px;
     }
     .index-popup-top_cat {
-        background-position: -117px -308px;
+        background-position: -239px -257px;
     }
     .index-popup-top_cat:hover {
-        background-position: 3px -308px;
+        background-position: -239px -358px;
     }
     .fixed_menu.fixed{
         min-height: 120px;
