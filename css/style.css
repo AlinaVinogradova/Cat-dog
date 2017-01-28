@@ -813,7 +813,7 @@ ol ol {
 .header-top_telephone2{
     color: #fff;
     font-size: 12px;
-    margin-right: 67px;
+    margin-right: 80px;
     text-align: right;
 }
 .header-top_telephone2 .header-top_telephone2_span{
@@ -5293,7 +5293,26 @@ body#cat-assortment{
         margin: 0 9px;
     }
     .header-top_set>ul{
-        margin-right: -10px;
+        margin-right: 5px;
+    }
+}
+@media (max-width: 1440px){
+    .header-logo{
+        top: -60px;
+        left: 446px;
+    }
+    .header-logo img{
+        width: 240px;
+    }
+    .header-middle ul:first-child{
+        left: 0px;
+        top: -12px;
+        padding-top: 10px;
+    }
+    .header-middle ul:last-child{
+        right: 0px;
+        top: -12px;
+        padding-top: 10px;
     }
 }
 @media (max-width: 1299px){
@@ -5303,14 +5322,17 @@ body#cat-assortment{
     .header-middle>ul>li>a{
         margin: 0 7px;
     }
-    .header-middle ul:last-child{
-        right: 0px;
-    }
     .header-top_set>ul>li{
         margin: 0 8px;
     }
     .header-middle>ul:first-child{
-        padding-right: 30px;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+    .header-middle ul:last-child{
+        right: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .b-popup-content.tab-registr{
         width: 50%;
@@ -5372,6 +5394,21 @@ body#cat-assortment{
 @media (max-width: 1199px){
     .header-top {
         height: 79px;
+    }
+    .header-logo{
+        left: 340px;
+    }
+    .header-middle>ul:first-child{
+        left: -19px;
+        top: -13px;
+        padding-right: 20px;
+        padding-left: 0;
+    }
+    .header-middle>ul:last-child{
+         right: -11px;
+        top: -13px;
+        padding-right: 0px;
+        padding-left: 20px;
     }
     .index-page_bg1{
         left: 35%;
@@ -5436,13 +5473,6 @@ body#cat-assortment{
     .header-middle>ul>li>a{
         font-size: 16px;
         margin: 0 8px;
-    }
-    .header-logo{
-        top: -60px;
-        left: 333px;
-    }
-    .header-logo img{
-        width: 230px;
     }
     .header-middle>ul:first-child:before,
     .header-middle>ul:last-child:before{
@@ -5554,7 +5584,7 @@ body#cat-assortment{
         right: -32px;
     }
     .header-top_animal-imgs{
-        margin-left: -32px;
+        margin-left: -18px;
     }
     .footer-bottom_col2-appstore{
         left: 37px;
@@ -5585,16 +5615,6 @@ body#cat-assortment{
     .header-middle>ul>li>a{
         font-size: 15px;
         margin: 0 5px;
-    }
-    .header-middle ul:first-child{
-        left: -29px;
-        top: -13px;
-        padding-top: 10px;
-    }
-    .header-middle ul:last-child{
-        right: 0px;
-        top: -13px;
-        padding-top: 10px;
     }
     .pop-up_basket-inside_title span:first-child {
         margin-right: 15%;
@@ -5789,9 +5809,6 @@ body#cat-assortment{
     }
 }
 @media (max-width: 1010px) and (min-width: 990px){
-    .header-top_animal-imgs{
-        margin-left: -30px;
-    }
     .container.menu-for-big-monitor{
         margin-left: -12px;
     }
@@ -5826,7 +5843,7 @@ body#cat-assortment{
     }
     .header-top_animal-imgs{
         top: 28px;
-        margin-left: 0;
+        left: 60px;
     }
     .b-popup{
         height: 165%;
@@ -7089,6 +7106,7 @@ body#cat-assortment{
         top: -216%;
     }
 }
+
 @media (min-width: 1400px){
     .dog-assortmant_main-button{
         height: 212px;
@@ -7123,6 +7141,7 @@ body#cat-assortment{
         margin-left: 15%;
     }
 }
+
 @media (min-width: 1500px){
     .pop-up_basket-inside_title span:first-child {
         margin-right: 19%;
@@ -7178,10 +7197,11 @@ body#cat-assortment{
     }
     .header-middle ul:last-child{
         top: -13px;
+        padding-left: 30px;
     }
     .header-middle ul:first-child {
         top: -13px;
-        padding-right: 25px;
+        padding-right: 30px;
     }
     .footer-bg {
         height: auto;
@@ -7201,9 +7221,6 @@ body#cat-assortment{
         }
     }
     @media(max-width: 1199px){
-        .header-logo{
-            left: 333px;
-        }
         .fixed_menu.fixed .header-middle > ul:last-child{
             padding-top: 9px;
         }
