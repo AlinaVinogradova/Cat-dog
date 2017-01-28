@@ -104,17 +104,17 @@ $(document).ready(function() {
   });
             
 //FIXED MENU
-    var sw = window.innerWidth;
-    if(sw > 992){
-        var $menu = $(".fixed_menu");
-    $(window).scroll(function(){
-            if ( $(this).scrollTop() > 1 && $menu.hasClass("default") ){
-              $menu.removeClass("default").addClass("fixed");
-            } else if($(this).scrollTop() <= 1 && $menu.hasClass("fixed")) {
-                $menu.removeClass("fixed").addClass("default");
-            }
-        });//scroll
-    }
+//    var sw = window.innerWidth;
+//    if(sw > 992){
+//        var $menu = $(".fixed_menu");
+//    $(window).scroll(function(){
+//            if ( $(this).scrollTop() > 1 && $menu.hasClass("default") ){
+//              $menu.removeClass("default").addClass("fixed");
+//            } else if($(this).scrollTop() <= 1 && $menu.hasClass("fixed")) {
+//                $menu.removeClass("fixed").addClass("default");
+//            }
+//        });//scroll
+//    }
         
 
 
@@ -170,13 +170,13 @@ function Ascroll() {
       R = Math.round(Ra.top + b.getBoundingClientRect().height - document.querySelector('.watched-products').getBoundingClientRect().top);  // селектор блока, при достижении нижнего края которого нужно открепить прилипающий элемент
     var sw = window.innerWidth;
     if(sw > 992){
-      if ((Ra.top - P) <= 140) {
-        if ((Ra.top - P) <= (R+140)) {
+      if ((Ra.top - P) <= 100) {
+        if ((Ra.top - P) <= (R+100)) {
           b.className = 'stop';
           b.style.top = - R-60 +'px';
         } else {
           b.className = 'sticky';
-          b.style.top = 140 + 'px';
+          b.style.top = 100 + 'px';
         }
       } else {
         b.className = '';
