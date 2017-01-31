@@ -95,7 +95,7 @@
     top: 10px;
 }
 .owl-theme .owl-controls .owl-buttons div.owl-next{
-    right: -10px;
+    right: 10px;
     transform: rotate(180deg);
     top: 10px;
 }
@@ -813,7 +813,7 @@ ol ol {
 .header-top_telephone2{
     color: #fff;
     font-size: 12px;
-    margin-right: 80px;
+    margin-right: 63px;
     text-align: right;
 }
 .header-top_telephone2 .header-top_telephone2_span{
@@ -849,6 +849,7 @@ ol ol {
 }
 .header-top_animal-imgs{
     margin: -7px 0 21px;
+    margin-left: -15px;
     position: absolute;
     top: 25px;
 }
@@ -956,7 +957,11 @@ body#index-page{
     width: 100%;
     text-transform: uppercase;
 }
-.header-top_set>ul{padding: 0; margin-top: 6px}
+.header-top_set>ul{
+    padding: 0;
+    margin-top: 6px;
+    margin-right: -13px;
+}
 .header-top_set>ul>li{margin: 0 20px; position: relative; padding-bottom: 11px;}
 .header-top_set>ul>li:nth-child(3){margin: 0}
 .header-top_set>ul>li:last-child{
@@ -1032,12 +1037,13 @@ body#index-page{
     border-radius: 0 0 0 10px;
     height: 42px;
     top: -12px;
+    left: -17px;
 }
 .header-middle ul:last-child{
     padding-left: 23px;
     border-radius: 0 0 10px 0;
     top: -12px;
-    right: -12px;
+    right: -17px;
     height: 42px;
 }
 
@@ -1716,13 +1722,13 @@ li.menu-item-has-children.active{
 }
 .single-prod_btn2{
     background: url(../images/sing-btn-bkg2.png) no-repeat;
-    padding-left: 63px;
+    padding-left: 61px;
     background-size: 100% 100%;
 }
 .single-prod_btn2 img{
     position: absolute;
     width: 29px;
-    top: 10px;
+    top: 7px;
     left: 21px;
 }
 
@@ -4655,7 +4661,7 @@ body#cat-assortment{
 .cat-assortmant_main-button{
     height: 170px;
     text-align: center;
-    background: url(../images/cat-dog-btn-bg3.png) no-repeat;
+    background: url(../images/cat-dog-btn-bg.png) no-repeat;
     background-size: 100% 101%;
     margin: 0 4.5% 40px;
     width: 16%;
@@ -4666,7 +4672,7 @@ body#cat-assortment{
     cursor: pointer;
 }
 .cat-assortmant_main-button:hover{
-    background: url(../images/cat-dog-btn-bg4.png) no-repeat;
+    background: url(../images/cat-dog-btn-bg2.png) no-repeat;
     background-size: 100% 101%;
 }
 .cat-assortmant_main-button:hover .cat-assortmant_main-button_title{
@@ -5284,7 +5290,7 @@ body#cat-assortment{
 @media (min-width: 1300px){
     .header-logo{
         top: -70px;
-        left: 424px;
+        left: 415px;
     }
     .header-top_set{
         margin-right: -18px;
@@ -5293,7 +5299,7 @@ body#cat-assortment{
         margin: 0 9px;
     }
     .header-top_set>ul{
-        margin-right: 5px;
+        margin-right: -15px;
     }
 }
 @media (max-width: 1440px){
@@ -5305,20 +5311,17 @@ body#cat-assortment{
         width: 240px;
     }
     .header-middle ul:first-child{
-        left: 0px;
         top: -12px;
         padding-top: 10px;
+        padding-left: 16px;
     }
     .header-middle ul:last-child{
-        right: 0px;
         top: -12px;
         padding-top: 10px;
+        padding-right: 21px;
     }
 }
 @media (max-width: 1299px){
-    .header-top_telephone2{
-        margin-right: 75px;
-    }
     .header-middle>ul>li>a{
         margin: 0 7px;
     }
@@ -5326,13 +5329,10 @@ body#cat-assortment{
         margin: 0 8px;
     }
     .header-middle>ul:first-child{
-        padding-right: 25px;
-        padding-left: 25px;
+        padding-left: 30px;
     }
     .header-middle ul:last-child{
-        right: 0px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-right: 32px;
     }
     .b-popup-content.tab-registr{
         width: 50%;
@@ -5405,7 +5405,7 @@ body#cat-assortment{
         padding-left: 0;
     }
     .header-middle>ul:last-child{
-         right: -11px;
+        right: -17px;
         top: -13px;
         padding-right: 0px;
         padding-left: 20px;
@@ -5424,7 +5424,7 @@ body#cat-assortment{
         top: -100px;
     }
     .header-top_set{
-        margin: 16px 0 16px 3px;
+        margin: 16px 0 16px -5px;
     }
     .b-popup .index-popup-content{
         width: 50%;
@@ -5591,8 +5591,7 @@ body#cat-assortment{
     }
     .header-top_telephone,
     .header-top_telephone2{
-        margin-right: 30px;
-/*        font-size: 11px;*/
+        margin-right: 23px;
     }
     .header-top_telephone2 .header-top_telephone2_span{
         letter-spacing: -0.5px;
@@ -5843,7 +5842,7 @@ body#cat-assortment{
     }
     .header-top_animal-imgs{
         top: 28px;
-        left: 60px;
+        left: 65px;
     }
     .b-popup{
         height: 165%;
@@ -6919,6 +6918,9 @@ body#cat-assortment{
     }
 }
 @media (max-width: 435px){
+    .breadcrumbs {
+        left: 14px;
+    }
     .main_left-column{
         margin-bottom: 100px;
     }
@@ -6930,7 +6932,7 @@ body#cat-assortment{
         right: 0;
     }
     .header-top_animal-imgs{
-        margin-left: 8px;
+        left: 25px;
     }
     .index_main_btn:first-child,
     .index_main_btn:nth-child(2){
@@ -6990,6 +6992,7 @@ body#cat-assortment{
     }
     #single-product .breadcrumbs{
         top: -42px;
+        left: 15px;
     }
     .single-product_main{
         margin-top: 50px;
@@ -7192,6 +7195,9 @@ body#cat-assortment{
 
 /*FOR FIREFOX*/
 @-moz-document url-prefix() {
+    .header-top_telephone2{
+        margin-right: 58px;
+    }
     .header-top_cat:hover{
         background-position: -164px -176px;
     }
@@ -7201,7 +7207,7 @@ body#cat-assortment{
     }
     .header-middle ul:first-child {
         top: -13px;
-        padding-right: 30px;
+        padding-right: 35px;
     }
     .footer-bg {
         height: auto;
@@ -7216,9 +7222,6 @@ body#cat-assortment{
         padding-right: 15px;
     }
     @media(max-width: 1299px){
-        .header-top_telephone2{
-            margin-right: 70px;
-        }
     }
     @media(max-width: 1199px){
         .fixed_menu.fixed .header-middle > ul:last-child{
@@ -7231,7 +7234,7 @@ body#cat-assortment{
             top: -14px;
         }
         .header-top_telephone2{
-            margin-right: 25px;
+            margin-right: 20px;
         }
     }
     @media(max-width: 991px){
@@ -7252,7 +7255,6 @@ body#cat-assortment{
     @media(max-width: 435px){
         .header-top_animal-imgs{
                 top: 27px;
-                left: 0;
             }
         .main_left-column{
             margin-bottom: 105px;
