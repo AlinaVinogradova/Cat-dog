@@ -259,7 +259,13 @@ $('.single-product_main_select  span.current').html(selectLine);
     $('select.single-product_main_select').niceSelect();           
 var selectLine = '<div class="select-line-current">'
 $('.single-product_main_select  span.current').html(selectLine);
-            
+       
+    $('.personal-account-pet-main_content-info_son-daughter .current').empty();
+    $('.personal-account-pet-main_content-info_pet-type .current').empty();
+    
+    $('.personal-account-pet-main_content-info_select-day .current').text('День');
+    $('.personal-account-pet-main_content-info_select-month .current').text('Мiсяц');
+    $('.personal-account-pet-main_content-info_select-year .current').text('Рік');
             
 //Single product TAB
 $('div.about-single-product div').click(function(){

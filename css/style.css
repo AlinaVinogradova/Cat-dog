@@ -163,13 +163,12 @@
     font-weight: 400;
    }
 @font-face {
-    font-family: 'Nexa Script'; 
-    src:url('../font/NexaScript/NexaScriptBold.eot');
-    src: url('../font/NexaScript/NexaScriptBold.eot?#iefix')format("embedded-opentype"),
-        url('../font/NexaScript/NexaScriptBold.woff'),
-        url('../font/NexaScript/NexaScriptBold.ttf');
-    font-style: normal;
-    font-weight: 600;
+    font-family: 'NexaScript'; 
+    src: url('../font/NexaScript/NexaScript.eot');
+    src: url('../font/NexaScript/NexaScript.eot?#iefix')format("embedded-opentype"),
+        url('../font/NexaScript/NexaScript.otf'),
+        url('../font/NexaScript/NexaScript.woff'),
+        url('../font/NexaScript/NexaScript.ttf');
    }
 @font-face {
     font-family: forMenu;
@@ -832,7 +831,6 @@ ol ol {
 }
 .header-top_dog:hover,
 .header-top_dog:active{
-    background: url(../images/icon-png.png) no-repeat;
     background: url(../images/icon.svg) no-repeat;
     background-size: 320px;
     background-position: -92px -174px;
@@ -847,8 +845,8 @@ ol ol {
 .header-top_cat{
     background-position: -84px -218px;
 }
-.header-top_cat:hover{
-    background: url(../images/icon-png.png) no-repeat;
+.header-top_cat:hover,
+.header-top_cat:active{
     background: url(../images/icon.svg) no-repeat;
     background-size: 320px;;
     background-position: -164px -174px;
@@ -1195,9 +1193,10 @@ ul.header-top_submenu li a{
 .personal-account_header-bottom{
     position: relative;
     border-bottom: 1px solid #2c0b00;
-    height: 125px;
-    margin-top: 95px;
+    height: 130px;
+    margin-top: 85px;
     font-size: 30px;
+    font-family: NexaScript;
     text-align: center;
     color: #727030;
 }
@@ -1406,7 +1405,7 @@ li.menu-item-has-children:after{
     pointer-events: none;
     position: absolute;
     right: 10%;
-    top: 18px;
+    top: 25px;
     -webkit-transform-origin: 66% 66%;
     -ms-transform-origin: 66% 66%;
     transform-origin: 66% 66%;
@@ -1444,7 +1443,6 @@ li.menu-item-has-children.active{
     width: 150px;
     height: 150px;
     display: block;
-    background: url(../images/icon-png.png) no-repeat;
     background: url(../images/icon.svg) no-repeat;
     background-size: 800px;
     margin: 5px 3px;
@@ -3498,9 +3496,6 @@ body#personal-account-favorite{
     color: #d7cecb;
 }
 .personal-account-pet-main_content{
-    border-bottom: 1px solid;
-    border-image: url(../images/bottom-border.png) 1;
-    padding-bottom: 20px;
     margin-bottom: 40px;
 }
 .personal-account-main_content .personal-account-main_content_title h2,
@@ -3759,12 +3754,19 @@ body#personal-account-favorite{
     outline: none;
     padding: 10px;
 }
+.personal-account-pet-main_content-add-pet{
+    display: inline-block;
+    margin: 40px auto 60px;
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid;
+    border-image: url(../images/bottom-border.png) 1;
+    padding-top: 25px;
+    margin-bottom: 40px;
+}
 .personal-account-pet-main_content-add-pet a{
     color: #fe0000;
-    text-align: center;
-    display: block;
     font-size: 26px;
-    margin: 40px auto 60px;
 }
 
 
