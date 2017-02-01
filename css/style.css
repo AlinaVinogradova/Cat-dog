@@ -868,6 +868,9 @@ ol ol {
 .header-top_animal-imgs div{
     display: inline-block;
 }
+.header-top_animal-imgs div a{
+    outline: none;
+}
 .header-top_animal-imgs span{
     display: block;
     margin: -41px 0px 0 65px;
@@ -1202,15 +1205,16 @@ ul.header-top_submenu li a{
     text-decoration: none;
     color: #fff;
     cursor: pointer;
-    border: none;;
+    border: none;
     background: url(../images/sing-btn-bg.png) no-repeat;
     background-size: 100% 100%;
     white-space: nowrap;
     display: inline-block;
     height: 53px;
     line-height: 50px;
-    width: 300px;
-    padding-left: 30px;
+    width: auto;
+    min-width: 280px;
+    padding: 0 17px;
     font-family: Algerius;
     font-size: 20px;
     margin: 25px 0 0;
@@ -1267,7 +1271,7 @@ body#personal-account:hover .account-menu_content{
     background: #f2e6d7;
     width: 450px;
     top: 52px;
-    right: -269px;
+    right: -271px;
     list-style-type: none;
     font-size: 20px;
 }
@@ -1329,7 +1333,7 @@ body#personal-account:hover .account-menu_content{
     left: 0;
     background: #fdf8e9;
     background-size: cover;
-    top: -629px;
+    top: -900px;
     z-index: 999;
     height: auto;
     margin: 0;
@@ -3613,7 +3617,7 @@ body#personal-account-favorite{
     color: #d5d5d5;
 }
 .personal-account-main_content-info_tel div:nth-child(3) span.personal-account-main_content-info_tel-second-span{
-    padding-top: 15px;
+    padding-top: 5px;
 }
 .personal-account-main_content-info_tel-hide{
     border-radius: 50%;
@@ -3636,7 +3640,7 @@ body#personal-account-favorite{
     padding-left: 4px;
 }
 .personal-account-main_content-info_tel-second-hide{
-    top: 15px;
+    top: 10px;
 }
 .personal-account-main_content-info>div+span,
 .personal-account-pet-main_content-info>div+span,
@@ -3659,11 +3663,11 @@ body#personal-account-favorite{
 .personal-account-main_content-info_password_change{
     background: #e3c9a8;
     border-radius: 10px;
-    display: block;
+    display: inline-block;
     color: #390b00;
     font-weight: 600;
     height: 30px;
-    width: 145px;
+    width: auto;
     line-height: 30px;
     padding: 0 8px;
     text-decoration: none;
@@ -4335,7 +4339,7 @@ body#personal-account-favorite{
     font-family: TimesNewRoman;
 }
 .personal-account-main_content-info_tel div:nth-child(3){
-    height: 40px;
+    height: 30px;
 }
 /*
 .personal-account-main_content-info_tel div:first-child .account_hidden-input:first-child{
@@ -5986,6 +5990,12 @@ body#cat-assortment{
     .main_left-column_uls{
         border: none;
     }
+    #single-product .content1 {
+        padding-bottom: 140px;
+    }
+    #single-product .watched-products{
+        margin-top: 0px;
+    }
     .single-prod_btn2 img{
         width: 28px;
         left: 8px;
@@ -6128,7 +6138,7 @@ body#cat-assortment{
         overflow-x: scroll;
     }
     .tabs-table-overflow2{
-        padding: 0 10px
+        padding: 0 10px;
     }
     #tab_3 h3{padding-left: 40px;}
     .tabs_your_comment_top-title{
@@ -6492,6 +6502,9 @@ body#cat-assortment{
     #cat-assortment .content1{
         padding: 0;
     }
+    #single-product .content1{
+        padding: 0;
+    }
     .content1{
         padding: 0;
     }
@@ -6667,6 +6680,7 @@ body#cat-assortment{
     .personal-account-main_left-column{
         text-align: center;
         margin-bottom: 35px;
+        float: none;
     }
     .personal-account-main_left-column_sticky{
         border: none;
@@ -6818,6 +6832,9 @@ body#cat-assortment{
     #tab_4 table.tab_4_table1 td{
         min-width: 91px;
     }
+    .tabs-table-overflow2 {
+        padding: 0 10px 0 5%;
+    }
     .pop-up_basket-inside_single-product_main-img{
         float: none;
     }
@@ -6928,6 +6945,9 @@ body#cat-assortment{
     .single-prod_btn2 img {
         top: 16%;
         width: 27px;
+    }
+    #tab_4 .tab_4_table1{
+        margin: 40px auto;
     }
     .b-popup-content_top-img div{
         font-size: 13px;
@@ -7167,6 +7187,9 @@ body#cat-assortment{
         margin: 0 auto;
         margin-top: 55px;
         float: none;
+    }
+    .tabs-table-overflow {
+        padding: 0 10px 0 10px;
     }
     .buy-click{
         float: none;

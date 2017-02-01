@@ -123,6 +123,7 @@ $(document).ready(function() {
     $('.to-nav-menu').click(function(){
                 $(".nav-menu").animate({top:0},350);
                 $('#over-menu').fadeIn();
+        
         }); 
          
 //  $( "#over-menu" ).click(function() {
@@ -130,7 +131,8 @@ $(document).ready(function() {
 //      $('#over-menu').fadeOut();
 //});
     $( ".menu-mobile_close" ).click(function() {
-      $(".nav-menu").animate({top:-524},350);
+        var height = $('#menu-mobile').innerHeight();
+      $(".nav-menu").animate({top: -height},350);
       $('#over-menu').fadeOut();
 });
     
