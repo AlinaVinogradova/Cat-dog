@@ -134,11 +134,14 @@ $(document).ready(function() {
       $('#over-menu').fadeOut();
 });
     
-    $('ul.menu-mobile_main li.menu-item-has-children').click(function(event){
+    $('ul.menu-mobile_main li.menu-item-has-children > a').on('click', function(event){
         event.preventDefault();
-        $(this).toggleClass('active');
-        $(this).children('.menu-mobile_submenu').toggleClass('active').slideToggle(300);
-    })
+        let parent = $(this).parent('li');
+        parent.toggleClass('active');
+        parent.children('.menu-mobile_submenu')
+            .toggleClass('active')
+            .slideToggle(300);
+    });
 
             
 //SCROLL LEFT NAV
@@ -433,11 +436,10 @@ $('.account-menu').hover(function(){
 			url: '../pop-up/booking.html',
             cache: false, 
 			success: function(html){
-                
-                var script = '<script src="js/tcal.js"></script>';
-                $('head').append(script);
-                
 				$('.b-popup-booking').html(html).css('display', 'block');
+                 var script = '<script src="js/tcal.js"></script>';
+                $('head').append(script);
+                f_tcalInit();
                 $( ".popup-overlay" ).click(function() {
                       $('.b-popup.b-popup-booking').css('display', 'none');
                     });

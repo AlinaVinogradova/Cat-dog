@@ -95,7 +95,7 @@
     top: 10px;
 }
 .owl-theme .owl-controls .owl-buttons div.owl-next{
-    right: 10px;
+    right: 0px;
     transform: rotate(180deg);
     top: 10px;
 }
@@ -828,24 +828,36 @@ ol ol {
     margin: 0px 3px;
 }
 .header-top_dog{
-    background-position: 0px -152px;
+    background-position: -83px -152px;
 }
-/*
-.header-top_dog:hover{
-    background: url(../images/icon.png) no-repeat;
+.header-top_dog:hover,
+.header-top_dog:active{
+    background: url(../images/icon-png.png) no-repeat;
     background: url(../images/icon.svg) no-repeat;
-    background-size: 320px;;
+    background-size: 320px;
     background-position: -92px -174px;
 }
-*/
+.header-top_dog.active,
+.header-top_dog.active:hover{
+    background: url(../images/sprite/sprite.png) no-repeat;
+    background: url(../images/sprite/sprite.svg) no-repeat;
+    background-size: 335px;
+    background-position: 0px -152px;
+}
 .header-top_cat{
     background-position: -84px -218px;
 }
 .header-top_cat:hover{
-    background: url(../images/icon.png) no-repeat;
+    background: url(../images/icon-png.png) no-repeat;
     background: url(../images/icon.svg) no-repeat;
     background-size: 320px;;
     background-position: -164px -174px;
+}
+.header-top_cat.active{
+    background: url(../images/sprite/sprite.png) no-repeat;
+    background: url(../images/sprite/sprite.svg) no-repeat;
+    background-size: 335px;
+    background-position: 0px -218px;
 }
 .header-top_animal-imgs{
     margin: -7px 0 21px;
@@ -1199,11 +1211,12 @@ ul.header-top_submenu li a{
     line-height: 50px;
     width: 300px;
     padding-left: 30px;
-    font-style: italic;
-    font-size: 24px;
+    font-family: Algerius;
+    font-size: 20px;
     margin: 25px 0 0;
     position: relative;
     outline: none;
+    transition: .3s;
 }
 .account-menu-btn{
     display: none;
@@ -1223,7 +1236,7 @@ ul.header-top_submenu li a{
     left: -2px;
     top: 52px;
     z-index: 1;
-    font-family: MinionPro;
+    font-family: TimesNewRoman;
 }
 body#personal-account:hover .account-menu_content{
  display: none;
@@ -1245,7 +1258,7 @@ body#personal-account:hover .account-menu_content{
 }
 .account-menu_content{
     display: none;
-    font-family: MinionPro;
+    font-family: TimesNewRoman;
 }
 .account-menu-tab_ul{
     padding: 10px;
@@ -1281,6 +1294,7 @@ body#personal-account:hover .account-menu_content{
     display: block;
     margin: -15px 0;
     float: none;
+    width: 100%;
 }
 .account-menu-tab_submenu li a{
     font-size: 18px;
@@ -1426,6 +1440,7 @@ li.menu-item-has-children.active{
     width: 150px;
     height: 150px;
     display: block;
+    background: url(../images/icon-png.png) no-repeat;
     background: url(../images/icon.svg) no-repeat;
     background-size: 800px;
     margin: 5px 3px;
@@ -1551,7 +1566,7 @@ li.menu-item-has-children.active{
   padding: 0 0 0 25px;
   display: block;
   margin: 8px 0;
-  font-family: MinionPro;
+  font-family: TimesNewRoman;
   font-size: 18px;
   line-height: 1;
     cursor: pointer;
@@ -1685,7 +1700,7 @@ li.menu-item-has-children.active{
   ellipsis;
   max-height: 110px; 
   overflow: hidden;
-  font-family: MinionPro;
+  font-family: TimesNewRoman;
   font-size: 18px;
   line-height: 1.1;
 }
@@ -1694,7 +1709,7 @@ li.menu-item-has-children.active{
     position: absolute;
     right: 44px;
     font-style: italic;
-    font-family: MinionPro;
+    font-family: TimesNewRoman;
     font-size: 18px;
 }
 .single-prod_more:hover{
@@ -2018,8 +2033,11 @@ li.menu-item-has-children.active{
     font-family: Algerius;
     margin-top: 0;
 }
+.single-product_main_info{
+    padding-right: 60px;
+}
 .single-product_main_descr p{
-  font-family: MinionPro;
+  font-family: TimesNewRoman;
   line-height: 1.3;
   font-size: 18px;
     margin-top: 5px;
@@ -2062,7 +2080,7 @@ li.menu-item-has-children.active{
     float: right;
 }
 .single-product_main_price-weight{
-    margin-top: 50px;
+    margin-top: 20px;
     font-family: Algerius;
 }
 .single-product_main_price{
@@ -2084,26 +2102,31 @@ li.menu-item-has-children.active{
     border: none;
     text-decoration: none;
     color: #fff;
-    background: url(../images/sing-btn-bg.png) no-repeat;
+    background: url(../images/bt-zamoviti.png) no-repeat;
     background-size: 100% 91%;
     white-space: nowrap;
     display: inline-block;
     height: 44px;
     line-height: 44px;
     width: 190px;
-    padding-left: 30px;
-    font-style: italic;
+    padding-left: 40px;
+    font-family: Algerius;
     font-size: 18px;
     margin: 30px 0 10px;
     position: relative;
     outline: none;
     float: right;
+    transition: .3s;
+}
+.single-product_main-buy:hover{
+    background: url(../images/bt-zamoviti-hover.png) no-repeat;
+    background-size: 100% 91%;
 }
 .single-product_main-buy img{
     width: 30px;
     position: absolute;
     top: 5px;
-    left: 25px;
+    left: 17px;
 }
 .buy-click{
     border-bottom: 2px solid #7b665f;
@@ -2159,16 +2182,17 @@ li.menu-item-has-children.active{
 .single-product_main_selects{
     font-family: Algerius;
     clear: both;
-    margin-left: -35px;
+    margin-left: -25px;
 }
 .single-product_main_selects>div{
     display: inline-block;
-    width: 45%;
+    width: 100%;
+    margin: 26px 0 0;
     text-align: center;
 }
 .nice-select.single-product_main_select{
     display: inline-block;
-    width: 74%;
+    width: 100%;
     height: 16px;
     -webkit-tap-highlight-color: transparent;
   background-color: #e3c992;
@@ -2315,7 +2339,7 @@ li.menu-item-has-children.active{
 #tab_2{margin-top: 20px;}
 #tab_2>div{
     padding: 20px 5px;
-    font-family: MinionPro;
+    font-family: TimesNewRoman;
     line-height: 1.4;
 }
 .first-tab_top_border{
@@ -2330,14 +2354,14 @@ li.menu-item-has-children.active{
 }
 .first-tab_top p{
     margin: 5px 0;
-    font-family: MinionPro;
+    font-family: TimesNewRoman;
     line-height: 1.4;
 }
 .first-tab_bottom{
     border-top: 1px solid #000;
     padding: 20px 0;
     margin-top: 1px;
-    font-family: MinionPro;
+    font-family: TimesNewRoman;
     line-height: 1.4;
 }
 .first-tab_bottom .bold {
@@ -2360,13 +2384,16 @@ div.active>span>span{
 .tabs_content{
     display: none;
 }
+.tab-table__padding-none{
+    padding-left: 0;
+}
 #tab_3{
     margin-top: 20px;
-    font-family: MinionPro;
+    font-family: TimesNewRoman;
     line-height: 1.3;
 }
 #tab_3 h3{
-    color: #52302c
+    color: #52302c;
 }
 table {
   font-family: Arial;
@@ -2432,6 +2459,9 @@ table {
 .tab_3-icos2{
     margin-top: 40px;
 }
+.tab_3-icos2_div{
+    text-align: center;
+}
 #tab_3 .tab_3-icos2 div div{
     line-height: 1.4
 }
@@ -2451,18 +2481,18 @@ table {
 #tab_4 .tab_4_table1 thead tr:first-child{
     background: #52302c;
     color: #fffefd;
-    font-size: 28px;
+    font-size: 24px;
     padding: 15px 155px;
 }
 #tab_4 .tab_4_table1 thead tr:nth-child(2){
     background: #dbd1d1;
     color: #52302c;
-    font-size: 23px;
+    font-size: 20px;
 }
 #tab_4 .tab_4_table1 tbody tr:first-child{
     background: #e3c9a8;
     color: #341e15;
-    font-size: 28px;
+    font-size: 24px;
 }
 #tab_4 .tab_4_table1 tbody tr:first-child td{
     padding: 2px 0;
@@ -2471,13 +2501,16 @@ table {
     width: 180px;
     clear: both;
     margin-bottom: 10px;
+    padding: 0 5px;
 }
 #tab_4 .tab_4_table1 tbody tr td:last-child div{
-    margin-top: 18px;
+    margin-top: 9px;
+    height: 55px;
 }
 #tab_4 .tab_4_table1 tbody tr td div{
     color: #341e15;
-    font-size: 18px;
+    font-size: 17px;
+    padding: 0 4px;
 }
 #tab_4 .tab_4_table1 tbody tr td div span{
     color: #e3c992;
@@ -2486,7 +2519,7 @@ table {
 #tab_5{
     margin-top: 20px;
     padding: 0 5px;
-    font-family: MinionPro;
+    font-family: TimesNewRoman;
 }
 #tab_5.tabs_content{
     overflow: hidden;
@@ -2500,23 +2533,31 @@ table {
     float: right;
 }
 .tabs_content_left-comment{
-    background: url(../images/sing-btn-bg.png) no-repeat;
+    background: url(../images/bg-otziv.png) no-repeat;
     background-size: 100%;
     text-decoration: none;
     color: #fff;
-    width: 254px;
+    width: 260px;
     display: block;
-    height: 59px;
-    line-height: 59px;
+    height: 54px;
+    line-height: 54px;
+    margin-bottom: 14px;
     padding-left: 57px;
-    font-size: 20px;
+    font-size: 18px;
+    font-family: Algerius;
     position: relative;
+    transition: .3s;
+}
+.tabs_content_left-comment:hover,
+.tabs_content_left-comment:active{
+    background: url(../images/bg-otziv-hover.png) no-repeat;
+    background-size: 100%;
 }
 .tabs_content_left-comment img{
-    position: absolute;
-    width: 45px;
-    top: 6px;
-    left: 10px
+    position: absolute;    
+    width: 42px;
+    top: 4px;
+    left: 10px;
 }
 .tabs-review{
     margin-top: 20px;
@@ -2565,14 +2606,21 @@ table {
     margin: 10px auto;
     display: block;
     border: none;
-    background: url(../images/sing-btn-bg2.png) no-repeat;
+    background: url(../images/bg-otziv.png) no-repeat;
     border-radius: 10px;
     background-size: cover;
     color: #fff;
     width: 259px;
     height: 44px;
-    font-size: 22px;
+    font-family: Algerius;
+    font-size: 18px;
     cursor: pointer;
+    transition: .3s;
+}
+.tabs_your_comment_bottom input[type="submit"]:hover,
+.tabs_your_comment_bottom input[type="submit"]:active{
+    background: url(../images/bg-otziv-hover.png) no-repeat;
+    background-size: cover;
 }
 .tabs_your_comment_bottom div.tabs_your_comment_bottom_inf{
     color: #66391f;
@@ -2736,7 +2784,7 @@ position: relative;
     margin-top: 10px;
     font-weight: 600;
     text-decoration: underline;
-    font-family: MinionPro;
+    font-family: TimesNewRoman;
 }
 .b-popup-content_inner-block{
     background: #e3c9a8;
@@ -2748,7 +2796,7 @@ position: relative;
     position: relative;
 }
 .b-popup-content_inner-block p{
-    font-family: MinionPro;
+    font-family: TimesNewRoman;
 }
 .tab-registr .b-popup-content_inner-block. div.b-popup-content_inner-block_input:last-child{
     margin-top: -5px;
@@ -2768,19 +2816,19 @@ position: relative;
     left: 14%;
     top: 10px;
     text-align: left;
-    font-family: MinionPro;
+    font-family: TimesNewRoman;
 }
 .b-popup-content_input span{
     position: absolute;
     left: 18px;
     top: 16px;
     text-align: left;
-    font-family: MinionPro;
+    font-family: TimesNewRoman;
 }
 #popup-tab_1.popup-tabs_content,
 #popup-tab_2.popup-tabs_content{
     font-size: 20px;
-    font-family: MinionPro;
+    font-family: TimesNewRoman;
 }
 #popup-tab_1 .b-popup-content_input:last-child span{
     top: 0;
@@ -2820,7 +2868,7 @@ span.b-popup-content_input_sumb{
 .b-popup-content_inner-block_remember label{
     position: absolute;
     left: 39%;
-    font-family: MinionPro;
+    font-family: TimesNewRoman;
 }
 .b-popup-content_inner-block_input_mistake{
     margin-top: 35px;
@@ -2867,7 +2915,7 @@ span.b-popup-content_input_sumb{
     margin: 0 auto;
     font-size: 14px;
     margin-top: 5px;
-    font-family: MinionPro;
+    font-family: TimesNewRoman;
     font-weight: 600;
 }
 .b-popup-content_bottom a{
@@ -2986,7 +3034,7 @@ span.b-popup-content_input_sumb{
     color: #390b00;
     text-align: left;
     padding-left: 12px;
-    font-family: MinionPro;
+    font-family: TimesNewRoman;
     font-size: 23px;
 }
 .popup-tabs_content2_left-col-addr{
@@ -3286,7 +3334,7 @@ span.b-popup-content_input_sumb{
     font-weight: 600;
     float: right;
     font-size: 18px;
-    font-family: MinionPro;
+    font-family: TimesNewRoman;
 }
 .pop-up_basket-inside_title span:first-child{
     margin-right: 13%;
@@ -3436,7 +3484,7 @@ body#personal-account-favorite{
 .personal-account-main_left-column_ul li a{
     text-decoration: none;
     color: #9b9b9b;  
-    font-family: MinionPro;
+    font-family: TimesNewRoman;
     font-size: 20px;
 }
 .personal-account-main_left-column_ul li a.active{
@@ -3498,7 +3546,7 @@ body#personal-account-favorite{
 .personal-account-main_content-info,
 .personal-account-pet-main_content-info,
 .personal-account-kennel-main_content-info{
-    font-family: MinionPro;
+    font-family: TimesNewRoman;
     margin-left: 20px;
 }
 .personal-account-main_content-info h2,
@@ -3731,7 +3779,7 @@ body#personal-account-favorite{
     margin-bottom: 0
 }
 .personal-account-kennel-main_content_title div{
-    font-family: MinionPro;
+    font-family: TimesNewRoman;
     color: #fc0100;
     margin: 15px 0;
     font-size: 17px;
@@ -4150,7 +4198,7 @@ body#personal-account-favorite{
     font-weight: 600;
     float: right;
     font-size: 18px;
-    font-family: MinionPro;
+    font-family: TimesNewRoman;
 }
 .personal-account-basket-main_content-inside_single-product {
     border-bottom: 3px solid #e3c9a8;
@@ -4284,7 +4332,7 @@ body#personal-account-favorite{
     height: 28px;
     margin: -2px 0 3px;
     font-size: 24px;
-    font-family: MinionPro;
+    font-family: TimesNewRoman;
 }
 .personal-account-main_content-info_tel div:nth-child(3){
     height: 40px;
@@ -4885,7 +4933,7 @@ body#cat-assortment{
     position: relative;
 }
 .enter-block p{
-    font-family: MinionPro;
+    font-family: TimesNewRoman;
 }
 .enter-block h2{
     margin: 0;
@@ -4898,7 +4946,7 @@ body#cat-assortment{
     left: 14%;
     top: 10px;
     text-align: left;
-    font-family: MinionPro;
+    font-family: TimesNewRoman;
     font-size: 20px;
 }
 .enter-block_input input{
@@ -4924,7 +4972,7 @@ body#cat-assortment{
 .enter-block_remember label{
     position: absolute;
     left: 25%;
-    font-family: MinionPro;
+    font-family: TimesNewRoman;
     font-size: 20px;
 }
 .enter-block_input_mistake{
@@ -4983,7 +5031,7 @@ body#cat-assortment{
     position: relative;
 }
 .registratin-block p{
-    font-family: MinionPro;
+    font-family: TimesNewRoman;
     text-align: center;
 }
 .registratin-block h2{
@@ -4998,7 +5046,7 @@ body#cat-assortment{
     left: 14%;
     top: 10px;
     text-align: left;
-    font-family: MinionPro;
+    font-family: TimesNewRoman;
     font-size: 20px;
 }
 .registratin-block_input input{
@@ -5024,7 +5072,7 @@ body#cat-assortment{
     margin: 0 auto;
     font-size: 18px;
     margin-top: 5px;
-    font-family: MinionPro;
+    font-family: TimesNewRoman;
     font-weight: 600;
     text-align: center;
     padding: 20px 220px;
@@ -5046,7 +5094,7 @@ body#cat-assortment{
 .registratin-block_remember label{
     position: absolute;
     left: 25%;
-    font-family: MinionPro;
+    font-family: TimesNewRoman;
     font-size: 20px;
 }
 .registratin-block_input_mistake{
@@ -5196,7 +5244,7 @@ body#cat-assortment{
     font-weight: 600;
     float: right;
     font-size: 18px;
-    font-family: MinionPro;
+    font-family: TimesNewRoman;
 }
 .basket-inside_title span:first-child{
     margin-right: 13%;
@@ -5319,6 +5367,34 @@ body#cat-assortment{
         top: -12px;
         padding-top: 10px;
         padding-right: 21px;
+    }
+    #tab_4 .tab_4_table1 thead tr:first-child,
+    #tab_4 .tab_4_table1 tbody tr:first-child td{
+        font-size: 20px;
+    }
+    #tab_4 .tab_4_table1 thead tr:nth-child(2){
+        font-size: 19px;
+    }
+    #tab_3 table.tab_3_table1{
+        width: 80%;
+    }
+    #tab_3 table.tab_3_table2{
+        width: 83%;
+    }
+    #tab_3 .tab_3-icos img{
+        width: 120px;
+    }
+    #tab_3 .tab_3-icos2 img{
+        width: 120px;
+    }
+    #tab_3 .tab_3-icos div:nth-child(2) div img, #tab_3 .tab_3-icos div:nth-child(3) div img{
+        width: 120px;
+    }
+    #tab_4 .tab_4_table1{
+        width: 50%;
+    }
+    #tab_4 .tab_4_table1 tbody tr td img{
+        max-width: 151px;
     }
 }
 @media (max-width: 1299px){
@@ -5456,14 +5532,6 @@ body#cat-assortment{
   .footer_internet a {
     margin: 0;
   }
-/*
-    .languages{
-        margin-left: 5px;
-    }
-    .languages ul li{
-        margin: 16px 5px;
-    }
-*/
     .header-top_on-map{
         margin-left: 10px;
     }
@@ -5560,6 +5628,11 @@ body#cat-assortment{
     }
     #tab_4 .tab_4_table1 tbody tr td img{
         width: 90%;
+        min-width: 85px;
+    }
+    #tab_4 .tab_4_table1 tbody tr td:last-child div {
+        margin-top: 16px;
+        height: 82px;
     }
     .tabs_your_comment_top_stars{
     margin-left: 19%;
@@ -6004,7 +6077,7 @@ body#cat-assortment{
     }
     .single-product_main-buy{
         display: block;
-        margin: -25px auto 0px;
+        margin: -40px auto 0px;
         height: 48px;
         line-height: 48px;
         float: right;
@@ -6022,24 +6095,21 @@ body#cat-assortment{
     }
     .nice-select.single-product_main_select{
         display: block;
-        width: 175px;
+        width: 100%;
         margin: 5px 0 20px;;
     }
     .select-line-current{
-        width: 120px;
+        width: 140px;
+        left: 10px;
     }
     .single-product_main_selects>div{
         display: block;
         text-align: center;
     }
-/*
-    .nice-select.open .list{
-        width: 270px;
-    }
-*/
     .single-product_main_selects>div{
-        text-align: left;
-        width: 100%;
+        text-align: center;
+        width: 49%;
+        display: inline-block;
     }
     .single-product_main_price-weight{
         margin-top: 20px;
@@ -6057,6 +6127,9 @@ body#cat-assortment{
     .tabs-table-overflow{
         overflow-x: scroll;
     }
+    .tabs-table-overflow2{
+        padding: 0 10px
+    }
     #tab_3 h3{padding-left: 40px;}
     .tabs_your_comment_top-title{
         display: block;
@@ -6068,12 +6141,18 @@ body#cat-assortment{
         margin: 11px 0;
         text-align: center;
     }
-    #tab_3 .tab_3-icos div div{
-        margin: 15px 0 5px 10px;
-        padding: 0;
+    #tab_4 table.tab_4_table1 td{
+        padding: 10px 0;
     }
+    #tab_3 table.tab_3_table1,
     #tab_3 table.tab_3_table2{
-        margin-left: 15px;
+        margin: 0 auto;
+        width: 90%;
+    }
+    #tab_3 .tab_3-icos div div{
+        margin: 10px 0 5px 0px;
+        padding: 0;
+        text-align: center;
     }
     #tab_3 .tab_3-icos2 img{
         margin-left: 0;
@@ -6081,23 +6160,30 @@ body#cat-assortment{
     #tab_3 .tab_3-icos2 div{
         text-align: center;
     }
-    #tab_4 .tab_4_table1 thead tr:first-child{
-        font-size: 19px;
+    #tab_3 .tab_3-icos div div:nth-child(2){
+        margin-top: 45px;
+    }
+    #tab_3 .tab_3-icos div:nth-child(2) div:nth-child(2), 
+    #tab_3 .tab_3-icos div:nth-child(3) div:nth-child(2){
+        margin-top: 75px;
     }
      #tab_4 .tab_4_table1 thead tr:nth-child(2){
         font-size: 18px;
     }
     #tab_4 .tab_4_table1 tbody tr:first-child td{
+        font-size: 16px;
+    }
+    #tab_4 .tab_4_table1 thead tr:first-child{
         font-size: 18px;
     }
     #tab_4 .tab_4_table1 tbody tr td div{
-        font-size: 16px;
+        font-size: 15px;
     }
     #tab_4 .tab_4_table1 tbody tr td:last-child div{
         margin-top: 61px;
     }
     #tab_4 .tab_4_table1 tbody tr td:last-child div{
-        height: 105px;
+        height: 85px;
         margin-top: 0;
         padding-top: 25%;
     }
@@ -6496,13 +6582,40 @@ body#cat-assortment{
     }
 */
     .main{margin-top: 0}
+    .single-product_main_descr h2{
+        margin-top: 20px;
+    }
+    .single-product_main_id{
+        float: left;
+    }
+    .single-product_main-buy{
+        float: none;
+        margin: 50px 0 0;
+    }
+    .single-product_main_price-weight,
+    .single-product_main_price,
+    .single-product_main_weight{
+        float: none;
+    }
+    .buy-click{
+        float: none;
+        margin: 15px 0 25px;
+    }
+    .single-product_main_selects{
+        text-align: left;
+    }
     .single-product_main_selects>div{
-        text-align: center;
-        width: 45%;
+        text-align: left;
+        width: 30%;
         display: inline-block;
     }
+    .select-line-current {
+        width: 120px;
+        left: 0;
+    }
     .nice-select.single-product_main_select{
-        margin: 5px auto 20px;
+        margin: 5px 0 20px;
+        width: 195px;
     }
     .single-product_bottom_descr{
         padding-right: 20px;
@@ -6699,6 +6812,9 @@ body#cat-assortment{
     .single-prod_btn2 {
         padding: 2px 0px 0 36px;
     }
+    .single-product_main_selects>div{
+        width: 38%;
+    }
     #tab_4 table.tab_4_table1 td{
         min-width: 91px;
     }
@@ -6798,7 +6914,8 @@ body#cat-assortment{
         margin-right: 0;
     }
     .nice-select.single-product_main_select{
-        width: 125px;
+        width: 135px;
+        padding-left: 5px;
     }
     .select-line-current{
         width: 80px;
@@ -6845,6 +6962,11 @@ body#cat-assortment{
     }
     .tab_3-icos2>div{
         text-align: center
+    }
+    .tab_3-icos,
+    .tab_3-icos2{
+        width: 100%;
+        margin: 40px auto 0;
     }
     .pop-up_basket_top-img img:first-child,
     .pop-up_basket_top-img img:nth-child(3){
@@ -7002,11 +7124,32 @@ body#cat-assortment{
         height: auto;
         font-size: 14px;
     }
+    .single-product_main_descr h2,
+    .single-product_main_descr p{
+        text-align: center;
+    }
+    .single-product_main_info{
+        padding-right: 0;
+    }
+    .single-product_main_add-to-favorite{
+        margin: 0 auto;
+    }
+    .single-product_main_decr_button{
+        display: block;
+        margin: 0 auto;
+    }
     .single-product_main_id{
         float: none;
     }
     .single-product{
         margin-top: 40px;
+    }
+    .single-product_main_selects>div{
+        text-align: center;
+        width: 48%;
+    }
+    .nice-select.single-product_main_select{
+        margin: 15px auto;
     }
     .single-product_main_price-weight{
         margin: 20px auto 0;
@@ -7021,11 +7164,13 @@ body#cat-assortment{
         float: none;
     }
     .single-product_main-buy{
+        margin: 0 auto;
         margin-top: 55px;
         float: none;
     }
     .buy-click{
         float: none;
+        margin: 15px auto;
     }
     .b-popup-content_inner-block_remember{
         margin-left: 0;
@@ -7222,6 +7367,7 @@ body#cat-assortment{
         padding-right: 15px;
     }
     @media(max-width: 1299px){
+        
     }
     @media(max-width: 1199px){
         .fixed_menu.fixed .header-middle > ul:last-child{
@@ -7236,10 +7382,19 @@ body#cat-assortment{
         .header-top_telephone2{
             margin-right: 20px;
         }
+        #tab_4 .tab_4_table1 tbody tr td:last-child div {
+            height: 88px;
+        }
+        #tab_4 .tab_4_table1 tbody tr td img {
+            min-width: 100px;
+        }
     }
     @media(max-width: 991px){
         .to-nav-menu{
             top: 0;
+        }
+        #tab_4 .tab_4_table1 tbody tr td:last-child div{
+            height: 85px;
         }
     }
      @media(max-width: 767px){
