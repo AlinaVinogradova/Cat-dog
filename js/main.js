@@ -420,7 +420,7 @@ $('.account-menu').hover(function(){
                 $('.pop-up-basket-main_content-inside_title-a').click(function(event){
                     event.preventDefault();
                     $('.pop-up_about-booking_block').css('display', 'block');
-                 });
+                });
                 $('.pop-up_about-booking_content-hide').click(function(){
                       $('.pop-up_about-booking_block').css('display', 'none');
                 });
@@ -571,15 +571,6 @@ $('.account-menu').hover(function(){
     });
     
     
-    $('.personal-account-basket-main_content-inside_title2-a').click(function(event){
-            event.preventDefault();
-            $('.personal-account-basket_about-booking_block2').css('display', 'block');
-     });
-    $('.personal-account-basket-booking_content-hide').click(function(){
-          $('.personal-account-basket_about-booking_block2').css('display', 'none');
-    });
-    
-    
     $('.basket-main_content-inside_title-a').click(function(event){
             event.preventDefault();
             $('.basket_about-booking_block').css('display', 'block');
@@ -589,11 +580,5 @@ $('.account-menu').hover(function(){
     });
     
     
-    $('.basket-main_content-inside_title2-a').click(function(event){
-            event.preventDefault();
-            $('.basket_about-booking_block2').css('display', 'block');
-     });
-    $('.basket-booking_content-hide').click(function(){
-          $('.basket_about-booking_block2').css('display', 'none');
-    });
+    
 });
