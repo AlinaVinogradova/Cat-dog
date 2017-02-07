@@ -4259,7 +4259,6 @@ body#personal-account-favorite{
 .personal-account-favorite-main_content_favorite-product-descr_about_price {
     color: #e74c3c;
     font-size: 36px;
-    position: relative;
     width: 100%;
     margin: 0 6px;
     letter-spacing: 2px;
@@ -4267,7 +4266,7 @@ body#personal-account-favorite{
 .personal-account-favorite-main_content_favorite-product-descr_about_price div{
     position: absolute;
     top: 2px;
-    right: -35px;
+    right: 0;
     font-size: 13px;
     letter-spacing: normal;
 }
@@ -4275,7 +4274,7 @@ body#personal-account-favorite{
     position: absolute;
     font-size: 12px;
     bottom: 8px;
-    right: 5px;
+    right: -4px;
 }
 .personal-account-favorite-main_content_favorite-product-descr p{
     margin: 2px 0;
@@ -6036,8 +6035,8 @@ body#cat-assortment{
     .personal-account-basket-main_content-inside {
         padding: 10px 0px 20px;
     }
-    .personal-account-favorite-main_content_favorite-product-descr_about_weight{
-        right: -32px;
+    .personal-account-favorite-main_content_favorite-product-descr_about{
+        width: 100%;
     }
     .header-top_animal-imgs{
         margin-left: -18px;
@@ -6111,6 +6110,9 @@ body#cat-assortment{
         text-align: right;
         padding-right: 11px;
         display: block;
+    }
+    .personal-account-favorite-main_content_favorite-product-descr_about_price{
+        font-size: 30px;
     }
     #personal-account-history .owl-theme .owl-controls .owl-buttons div.owl-prev,
     #personal-account-history .owl-theme .owl-controls .owl-buttons div.owl-next{
@@ -6793,9 +6795,6 @@ body#cat-assortment{
         width: 100%;
         display: block;
     }
-    .personal-account-favorite-main_content_favorite-product-descr_about_weight {
-        right: -5px;
-    } 
     #personal-account-history .owl-theme .owl-controls .owl-buttons div.owl-prev, 
     #personal-account-history .owl-theme .owl-controls .owl-buttons div.owl-next{
         right: -15px;
@@ -7167,6 +7166,7 @@ body#cat-assortment{
     .personal-account-favorite-main_content_favorite-product{
         border: none;
         margin-bottom: 20px;
+        padding: 20px;
     }
     .personal-account-favorite-main_content_favorite-product-hide{
         top: 20px;
@@ -7424,23 +7424,27 @@ body#cat-assortment{
         border: none;
     }
     .dog-assortmant_main-button{
+        background: none;
+        box-shadow: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: auto;
+    }
+    .dog-assortmant_main-button_title{
         background: #decabf;
         padding: 0;
         height: 50px;
         line-height: 50px;
-        line-height: 50px;
-        box-shadow: none;
         display: block;
         width: 100%;
         margin: 0;
         border-radius: 0;
         border-bottom: 1px solid #bca699;
     }
-    .dog-assortmant_main-button:hover{
-        background: #decabf;
-    }
-    .cat-assortmant_main_products{
-        margin-top: 0;
+    .dog-assortmant_main-button_title:hover,
+    .dog-assortmant_main-button_title:active{
+        background: #c8b0a3;
     }
     .dog-assortmant_main-button_title{
         font-size: 18px;
@@ -7458,20 +7462,27 @@ body#cat-assortment{
         border: none;
     }
     .cat-assortmant_main-button{
+        background: none;
+        box-shadow: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: auto;
+    }
+    .cat-assortmant_main-button_title{
         background: #a2cfe4;
         padding: 0;
         height: 50px;
         line-height: 50px;
-        line-height: 50px;
-        box-shadow: none;
         display: block;
         width: 100%;
         margin: 0;
         border-radius: 0;
         border-bottom: 1px solid #7fb3cb;
     }
-    .cat-assortmant_main-button:hover{
-        background: #a2cfe4;
+    .cat-assortmant_main-button_title:hover,
+    .cat-assortmant_main-button_title:active{
+        background: #85b8cf;
     }
     .cat-assortmant_main_products{
         margin-top: 0;
