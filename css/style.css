@@ -1206,12 +1206,12 @@ ul.header-top_submenu li a{
     color: #fff;
     cursor: pointer;
     border: none;
-    background: url(../images/sing-btn-bg.png) no-repeat;
+    background: url(../images/bt-zamoviti.png) no-repeat;
     background-size: 100% 100%;
     white-space: nowrap;
     display: inline-block;
     height: 53px;
-    line-height: 50px;
+    line-height: 53px;
     width: auto;
     min-width: 280px;
     padding: 0 17px;
@@ -1248,7 +1248,7 @@ body#personal-account:hover .account-menu_content{
 .account-menu-btn1,
 .account-menu-btn2{
     display: block;
-    margin: 10px 0px 5px;
+    margin: 5px 0px;
     padding: 0 10px;
     color: #390b00;
     font-size: 20px;
@@ -2004,7 +2004,7 @@ ul.menu-mobile_main{
 }
 .single-product_main_add-to-favorite:hover{
     color: #ed1c24;
-    background-position: 249px -28px;
+    background-position: 249px -27px;
 }
 .single-product_main_id{
     background: #e3c992;
@@ -3436,7 +3436,7 @@ span.b-popup-content_input_sumb{
 .pop-up_basket-inside_single-product-hide{
     position: absolute;
     right: 0;
-    top: 43px;
+    top: 34px;
     text-decoration: none;
     background: #ff0000;
     color: #fff;
@@ -3572,6 +3572,9 @@ body#personal-account-kennel,
 body#personal-account-history,
 body#personal-account-favorite{
     background: #fff;
+}
+.personal-account-main{
+    position: relative;
 }
 .personal-account-main_left-column_h3{
     font-family: Algerius;
@@ -3734,12 +3737,11 @@ body#personal-account-favorite{
     text-decoration: none;
     height: 20px;
     line-height: 20px;
-    padding-left: 4px;
+    text-align: center;
 }
 .personal-account-main_content-info_tel-hide:hover{
     color: #301207;
     background: #dbbb90;
-    padding-left: 4px;
 }
 .personal-account-main_content-info_tel-second-hide{
     top: 10px;
@@ -4175,10 +4177,12 @@ body#personal-account-favorite{
 .owl-demo3-descr p{
     margin: 2px 0;
     font-size: 15px;
+    width: 95%;
 }
 .owl-demo3-descr p+a{
     float: right;
     font-size: 15px;
+    color: #000;
 }
 
 
@@ -4445,7 +4449,7 @@ body#personal-account-favorite{
 .personal-account-basket-main_content-inside_single-product-hide {
     position: absolute;
     right: 0;
-    top: 38px;
+    top: 34px;
     text-decoration: none;
     background: #ff0000;
     color: #fff;
@@ -5620,7 +5624,7 @@ body#cat-assortment{
 .basket-inside_single-product-hide{
     position: absolute;
     right: 0;
-    top: 38px;
+    top: 34px;
     text-decoration: none;
     background: #ff0000;
     color: #fff;
@@ -6075,14 +6079,27 @@ body#cat-assortment{
     .owl-demo3-img{
         width: 100%;
         display: block;
-        height: 170px;
+        text-align: center;
+        height: 200px;
+        position: relative;
     }
     .owl-demo3-img img{
-        position: relative;
-        max-height: 150px;
+        max-width: 100px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
     }
     .owl-demo3-descr{
         width: 100%;
+        display: block;
+    }
+    .owl-demo3-descr p+a{
+        text-align: right;
+        padding-right: 11px;
         display: block;
     }
     #personal-account-history .owl-theme .owl-controls .owl-buttons div.owl-prev,
@@ -6683,14 +6700,29 @@ body#cat-assortment{
     .pop-up_about-booking_block{
         width: 110%
     }
+    .header-top {
+        height: 0;
+    }
     .personal-account_header-bottom{
         margin-top: 15px;
         height: 212px;
+    }
+    .personal-account-main_content-infos,
+    .personal-account-pet-main_content-infos,
+    .personal-account-kennel-main_content-infos{
+        padding: 0;
     }
     .personal-account-main_content-info,
     .personal-account-pet-main_content-info, 
     .personal-account-kennel-main_content-info{
         width: 100%;
+        margin-left: 0;
+    }
+    .personal-account-kennel-main_content-info_photo{
+        margin-left: 0;
+    }
+    .personal-account-kennel-main_content-info_photo-add{
+        padding-left: 0;
     }
     .account_hidden-input,
     .personal-account-main_content-info_password div span input{
@@ -6753,6 +6785,10 @@ body#cat-assortment{
     }
     .personal-account-favorite-main_content_favorite-product-descr_about_weight {
         right: -5px;
+    } 
+    #personal-account-history .owl-theme .owl-controls .owl-buttons div.owl-prev, 
+    #personal-account-history .owl-theme .owl-controls .owl-buttons div.owl-next{
+        right: -15px;
     }
     .personal-account-pet-main_content-info_pet-type,
     .personal-account-pet-main_content-info_son-daughter{
@@ -7091,6 +7127,7 @@ body#cat-assortment{
         text-align: center;
         margin-bottom: 35px;
         float: none;
+        margin-top: 120px
     }
     .personal-account-main_left-column_sticky{
         border: none;
@@ -7109,7 +7146,7 @@ body#cat-assortment{
     }
     .personal-account-basket-main_content-inside_bottom_blok_all,
     .personal-account-basket-main_content-inside_bottom_blok_sale{
-        padding-left: 0;
+        padding: 10px 0;
     }
     .personal-account-basket-main_content-inside_bottom_blok_sum{
         padding: 20px 0 0;
@@ -7132,6 +7169,44 @@ body#cat-assortment{
     .owl-demo3-descr{
         text-align: center;
     }
+    .account-menu{
+        position: absolute;
+        left: 50%;
+        margin-left: -141px;
+        margin-top: 35px;
+    }
+    .account-menu:hover .account-menu-btn{
+        left: 3%;
+        width: 94%;
+    }
+    .account-menu-btn1, 
+    .account-menu-btn2{
+        display: inline-block;
+        width: 50%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    .account-menu-btn1{
+        border-right: 2px solid #d3b99c;
+    }
+    .account-menu-btn2{
+        border-left: 1px solid #d3b99c;
+        margin:  0 -3px 0 -5px;
+    } 
+    .account-menu-tab_ul{
+        right: 0;
+        left: 3%;
+        width: 94%;
+        top: 102px;
+    }
+    .account-menu-tab_ul li{
+        display: block;
+        width: auto;
+        margin: 0;
+        float: none;
+        text-align: center;
+    }
     .personal-account-pet-main_content-info_pet-type, 
     .personal-account-pet-main_content-info_son-daughter{
         float: right !important;
@@ -7142,6 +7217,9 @@ body#cat-assortment{
     .personal-account-history-main_content_progressbar_dog-main,
     .personal-account-history-main_content_progressbar_cat-main{
         margin: 60px 0 100px;
+    }
+    .owl-demo3-descr p{
+        margin-bottom: 10px;
     }
     .personal-account-main_content-info_tel div {
         width: 95%;
@@ -7213,7 +7291,16 @@ body#cat-assortment{
     .basket-main_content-inside_bottom_block {
         display: block;
         float: none;
+        text-align: center;
     }
+    .basket-main_content-inside_bottom_blok_all,
+    .basket-main_content-inside_bottom_blok_sale{
+        padding: 10px 0;
+    }
+    .basket-main_content-inside_bottom_blok_sum{
+        padding: 20px 0 0;
+    }
+    
     .b-popup .index-popup-content {
         width: 86%;
     }
@@ -7323,17 +7410,27 @@ body#cat-assortment{
     .main-pagination {
         left: 29%;
     }
-    .dog-assortmant_main-buttons{
+     .dog-assortmant_main-buttons{
         border: none;
-        margin: 20px 0;
     }
     .dog-assortmant_main-button{
-        background: none;
+        background: #decabf;
         padding: 0;
-        height: auto;
+        height: 50px;
+        line-height: 50px;
+        line-height: 50px;
         box-shadow: none;
-        display: inline-block;
-        width: 44%;
+        display: block;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        border-bottom: 1px solid #bca699;
+    }
+    .dog-assortmant_main-button:hover{
+        background: #decabf;
+    }
+    .cat-assortmant_main_products{
+        margin-top: 0;
     }
     .dog-assortmant_main-button_title{
         font-size: 18px;
@@ -7349,15 +7446,25 @@ body#cat-assortment{
     }
     .cat-assortmant_main-buttons{
         border: none;
-        margin: 20px 0;
     }
     .cat-assortmant_main-button{
-        background: none;
+        background: #a2cfe4;
         padding: 0;
-        height: auto;
+        height: 50px;
+        line-height: 50px;
+        line-height: 50px;
         box-shadow: none;
-        display: inline-block;
-        width: 44%;
+        display: block;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        border-bottom: 1px solid #7fb3cb;
+    }
+    .cat-assortmant_main-button:hover{
+        background: #a2cfe4;
+    }
+    .cat-assortmant_main_products{
+        margin-top: 0;
     }
     .cat-assortmant_main-button_title{
         font-size: 18px;
@@ -7380,18 +7487,6 @@ body#cat-assortment{
     }
     .basket-inside_title span{
         display: none;
-    }
-}
-@media (max-width: 530px) and (min-width: 435px){
-/*
-    .single-prod_btn{
-        margin: 15px 23% 0;
-        min-width: 239px;
-        padding: 12px 10px;
-    }
-*/
-    .personal-account-basket-main_content-inside_title span:first-child{
-        margin-right: 20%;
     }
 }
 @media (max-width: 530px){
@@ -7473,7 +7568,28 @@ body#cat-assortment{
         width: 60%;
     }
     .personal-account-main_content-info{
-        margin-bottom: 45px;
+        margin-bottom: 30px;
+    }
+    .personal-account-main_content-info>div>span:last-child,
+    .personal-account-main_content-info>div>span.personal-account-main_content-info_tel-second-span,
+    .personal-account-pet-main_content-info>div>span:last-child,
+    .personal-account-kennel-main_content-info>div>span:last-child{
+        float: left;
+    }
+    .personal-account-main_content-info div,
+    .personal-account-pet-main_content-info div, 
+    .personal-account-pet-main_content-info:first-of-type div, .personal-account-pet-main_content-info:nth-of-type(3) div,
+    .personal-account-kennel-main_content-info div{
+        height: 60px;
+    }
+    .personal-account-main_content-info_tel div:nth-child(3){
+        height: 60px;
+    }
+    .personal-account-main_content-info_password .personal-account-main_content-info_password_div{
+        height: 30px;
+    }
+    .personal-account-main_content-info.personal-account-main_content-info_tel div{
+        margin-bottom: 10px;
     }
     .personal-account-main_content-info div span:first-child, 
     .personal-account-pet-main_content-info div span:first-child, 
@@ -7486,11 +7602,10 @@ body#cat-assortment{
     .personal-account-main_content-info_password div span input{
         width: 100%;
     }
-    .personal-account-main_content-info.personal-account-main_content-info_tel div,
     .personal-account-main_content-info>div+span,
     .personal-account-pet-main_content-info>div+span, 
     .personal-account-kennel-main_content-info>div+span{
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
     .personal-account-basket-main_content-inside_single-product_price{
         margin-left: 70px;
@@ -7636,6 +7751,7 @@ body#cat-assortment{
         text-align: right;
         top: 0px;
         right: 10px;
+        height: 10px;
     }
     .checkbox:not(checked) + label{
         padding-left: 40%;

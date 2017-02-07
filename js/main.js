@@ -293,19 +293,19 @@ $('.account-menu').hover(function(){
     
     //BASKET PLUS MINUS
     $('.minus').click(function () {
-                    var $input = $(this).parent().find('input');
-                    var count = parseInt($input.val()) - 1;
-                    count = count < 1 ? 1 : count;
-                    $input.val(count);
-                    $input.change();
-                    return false;
-                });
-                $('.plus').click(function () {
-                    var $input = $(this).parent().find('input');
-                    $input.val(parseInt($input.val()) + 1);
-                    $input.change();
-                    return false;
-            });
+        var $input = $(this).parent().find('input');
+        var count = parseInt($input.val()) - 1;
+        count = count < 1 ? 1 : count;
+        $input.val(count);
+        $input.change();
+        return false;
+    });
+    $('.plus').click(function () {
+            var $input = $(this).parent().find('input');
+            $input.val(parseInt($input.val()) + 1);
+            $input.change();
+            return false;
+    });
     //BASKET HIPE SINGLE PRODUCT
     $('.personal-account-basket-main_content-inside_single-product-hide').click(function(){
                     $(this).parent('.personal-account-basket-main_content-inside_single-product').hide();
@@ -541,21 +541,7 @@ $('.account-menu').hover(function(){
     });
 
 //FOR BASKET PAGE
-//Pop up корзина (количество)
-    $('.minus').click(function () {
-        var $input = $(this).parent().find('input');
-        var count = parseInt($input.val()) - 1;
-        count = count < 1 ? 1 : count;
-        $input.val(count);
-        $input.change();
-        return false;
-    });
-    $('.plus').click(function () {
-        var $input = $(this).parent().find('input');
-        $input.val(parseInt($input.val()) + 1);
-        $input.change();
-        return false;
-});
+//Pop up корзина
     $('.basket-inside_single-product-hide').click(function(){
         $(this).parent('.basket-inside_single-product').hide();
     })    
