@@ -7691,6 +7691,20 @@ body#cat-assortment{
         text-align: center;
     }
 }
+@media (max-width: 479px){
+    .owl-demo6-descr a.owl-demo6_a {
+        text-align: center;
+        float: none;
+    }
+    .owl-demo8-descr a.owl-demo8_a {
+        text-align: center;
+        float: none;
+    }
+    .owl-demo3-descr p+a{
+        text-align: center;
+        float: none;
+    }
+}
 @media (max-width: 435px){
     .personal-account-basket-main_content-inside_single-product_price{
         margin-left: 6px;
