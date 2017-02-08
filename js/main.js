@@ -283,7 +283,7 @@ $('div.account-menu-btn div').click(function(){
      $('div.account-menu-btn div').removeClass('active');
       $(this).addClass('active');
       $('.account-menu_content').hide();
-      $('#account-menu-tab_'+ id).fadeIn(100);
+      $('#account-menu-tab_'+ id).fadeIn(10);
 });
 $('.account-menu').hover(function(){
     }, function(){

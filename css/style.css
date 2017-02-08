@@ -172,9 +172,9 @@
    }
 @font-face {
     font-family: forMenu;
-    src:url('../font/7548/7548.eot');
-    src: url('../font/7548/7548.eot?#iefix')format("embedded-opentype"),
-         url('../font/7548/7548.ttf');
+    src:url('../font/7548/a_stamper.eot');
+    src: url('../font/7548/a_stamper.eot?#iefix')format("embedded-opentype"),
+         url('../font/7548/a_stamper.ttf');
     font-style: normal;
     font-weight: 600;
    }
@@ -1066,6 +1066,7 @@ body#index-page{
     position: relative;
     padding-bottom: 10px;
     z-index: 1;
+    letter-spacing: .2px;
 }
 .fixed_menu.fixed .header-middle ul li.active a{color: #2c0b00}
 .header-middle>ul>li>a{
@@ -1206,7 +1207,7 @@ ul.header-top_submenu li a{
     color: #fff;
     cursor: pointer;
     border: none;
-    background: url(../images/bt-zamoviti.png) no-repeat;
+    background: url(../images/account-btn.png) no-repeat;
     background-size: 100% 100%;
     white-space: nowrap;
     display: inline-block;
@@ -1214,32 +1215,34 @@ ul.header-top_submenu li a{
     line-height: 53px;
     width: auto;
     min-width: 280px;
-    padding: 0 17px;
-    font-family: Algerius;
+    text-align: center;
+    font-style: italic;
     font-size: 20px;
     margin: 25px 0 0;
     position: relative;
     outline: none;
     transition: .3s;
+    z-index: 1;
 }
 .account-menu-btn{
     display: none;
 }
-.account-menu:hover{
+.account-menu:hover .account-menu-main{
     background: #e3c9a8;
     color: #390b00;
     border: 1px solid #e3c9a8;
     border-radius: 10px;
+    z-index: 1;
 }
 .account-menu:hover .account-menu-btn{
     display: block;
     position: absolute;
-    background: #e8d1b7;
+    background: #f2e6d7;
     color: #390b00;
     width: 40%;
-    left: -2px;
-    top: 52px;
-    z-index: 1;
+    left: 0;
+    top: 42px;
+    z-index: -1;
     font-family: TimesNewRoman;
 }
 body#personal-account:hover .account-menu_content{
@@ -1270,10 +1273,11 @@ body#personal-account:hover .account-menu_content{
     position: absolute;
     background: #f2e6d7;
     width: 450px;
-    top: 52px;
-    right: -271px;
+    top: 42px;
+    right: -280px;
     list-style-type: none;
     font-size: 20px;
+    z-index: -1;
 }
 .account-menu-tab_ul li{
     display: inline-block;
