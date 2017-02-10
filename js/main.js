@@ -384,9 +384,9 @@ $('.account-menu').hover(function(){
             cache: false, 
 			success: function(html){
 				$('.b-popup-regist').html(html).css('display', 'block');
-                $( ".popup-overlay" ).click(function() {
+                $( ".popup-overlay, .pop-up_registr-hide" ).click(function() {
                     $('.b-popup.b-popup-regist').css('display', 'none');
-    });
+                });
 			}
 		});
     });
@@ -399,9 +399,9 @@ $('.account-menu').hover(function(){
             cache: false, 
 			success: function(html){
 				$('.b-popup-enter').html(html).css('display', 'block');
-                $( ".popup-overlay" ).click(function() {
-                    $('.b-popup.b-popup-enter').css('display', 'none');
-    });
+                $( ".popup-overlay, .pop-up_enter-hide" ).click(function() {
+                    $('.b-popup-enter').css('display', 'none');
+                });
 			}
 		});
     });
@@ -465,9 +465,9 @@ $('.account-menu').hover(function(){
                  var script = '<script src="js/tcal.js"></script>';
                 $('head').append(script);
                 f_tcalInit();
-                $( ".popup-overlay" ).click(function() {
-                      $('.b-popup.b-popup-booking').css('display', 'none');
-                    });
+                $( ".popup-overlay, .pop-up_booking-hide" ).click(function() {
+                    $('.b-popup-booking').css('display', 'none');
+                });
                 $('.pop-up_about-booking').click(function(){
                       $('.pop-up_about-booking_block').css('display', 'block');
                       $('#tcal').css('visibility' , 'hidden');

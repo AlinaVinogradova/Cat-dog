@@ -812,7 +812,7 @@ ol ol {
 .header-top_telephone2{
     color: #fff;
     font-size: 12px;
-    margin-right: 63px;
+    margin-right: -10px;
     text-align: right;
 }
 .header-top_telephone2 .header-top_telephone2_span{
@@ -987,7 +987,7 @@ body#index-page{
     margin-left: 7px;
     float: right;
 }
-.header-top_set>ul>li:last-child img+span.top-backet-span{
+span.top-backet-span{
     display: none;
     position: absolute;
     border-radius: 50%;
@@ -995,8 +995,8 @@ body#index-page{
     color: #fff;
     width: 25px;
     height: 25px;
-    right: -3px;
-    top: 0px;
+    right: -10px;
+    top: -5px;
     padding: 4px 5px 0 1px;
     padding-right: 9%;
 }
@@ -2583,7 +2583,7 @@ table {
     font-size: 20px;
     position: absolute;
     bottom: 5px;
-    left: 22px;
+    left: 28px;
 }
 .tabs_your_comment_top_star-img{
     width: 32px;
@@ -2892,6 +2892,22 @@ span.b-popup-content_input_sumb{
     color: #ff2b2b;
     font-weight: 600;
 }
+.pop-up_registr-hide{
+    border-radius: 50%;
+    color: #f5f3f1;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    background: #301207;
+    font-weight: 100;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+}
 .b-popup-content.tab-registr input[type='submit']{
     border: 2px solid #390b00;
     border-radius: 10px;
@@ -2934,6 +2950,22 @@ span.b-popup-content_input_sumb{
     font-family: MinionPro;
     cursor: pointer;
     transition: .5s;
+}
+.pop-up_enter-hide{
+    border-radius: 50%;
+    color: #f5f3f1;
+    position: absolute;
+    right: 14px;
+    top: 9px;
+    background: #301207;
+    font-weight: 100;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
 }
 .b-popup-content.tab-come-in input[type="submit"]:hover,
 .b-popup-content.tab-come-in input[type="submit"]:active{
@@ -3163,6 +3195,22 @@ span.b-popup-content_input_sumb{
 .popup-tabs_content2_bottom-inf p{
     margin: 48px 0 0 0;
 }
+.pop-up_booking-hide{
+    border-radius: 50%;
+    color: #f5f3f1;
+    position: absolute;
+    right: 25px;
+    top: 16px;
+    background: #301207;
+    font-weight: 100;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+}
 .pop-up_about-booking_block{
     background: #e3c9a8;
     color: #390b00;
@@ -3330,6 +3378,7 @@ span.b-popup-content_input_sumb{
     line-height: 32px;
     text-align: center;
     font-size: 30px;
+    cursor: pointer;
 }
 .pop-up_basket-inside{
     background: #fff;
@@ -4577,12 +4626,12 @@ body#dog-assortment{
 .owl-demo5-bg{
     background: url(../images/slider-bg.png) no-repeat;
     background-size: cover;
-    background-position: 0 32px;
+    background-position: 0 22px;
 }
 .owl-demo5{
     margin-bottom: 17px;
     margin-top: 55px;
-    height: 490px;
+    height: 470px;
 }
 .owl-demo5 .item{
     position: relative;
@@ -4634,6 +4683,23 @@ body#dog-assortment{
     color: #390b00;
     margin-top: 15px;
 }
+.owl-demo5 .owl-item div{
+    position: relative;
+    text-align: center;
+    height: 400px;
+    margin: 20px 0 0;
+}
+.owl-demo5 .owl-item div img{
+    max-width: 100%;
+    width: auto;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
 .dog-assortmant_main-bg{
     background: -moz-linear-gradient(top, #eacfae 0%, #ffffff 100%);
     background: -webkit-linear-gradient(top, #eacfae 0%,#ffffff 100%);
@@ -4645,14 +4711,17 @@ body#dog-assortment{
 .dog-assortmant_main-buttons{
     border-bottom: 2px solid;
     border-image: url(../images/bottom-border.png) 1;
+    text-align: center;
 }
 .dog-assortmant_main-button{
+    float: none;
+    display: inline-block;
     height: 170px;
     text-align: center;
     background: url(../images/cat-dog-btn-bg.png) no-repeat;
     background-size: 100% 101%;
-    margin: 0 4.5% 40px;
-    width: 16%;
+    margin: 0 4% 40px;
+    width: 15%;
     box-shadow: 3px 3px 6px #362c20;
     border-radius: 24px;
     transition: .3s;
@@ -4810,7 +4879,6 @@ body#dog-assortment{
     right: 5px;
 }
 .owl-demo5-2{
-    height: auto;
     margin: 0 0 20px;
 }
 .owl-demo5-2 .owl-demo5_item_block-inside{
@@ -4859,7 +4927,7 @@ body#cat-assortment{
 .owl-demo7{
     margin-bottom: 20px;
     margin-top: 55px;
-    height: 490px;
+    height: 470px;
 }
 .owl-demo7 div.owl-pagination .owl-page span{
     width: 35px;
@@ -4918,20 +4986,40 @@ body#cat-assortment{
     color: #390b00;
     margin-top: 15px;
 }
+.owl-demo7 .owl-item div{
+    position: relative;
+    text-align: center;
+    height: 400px;
+    margin: 20px 0 0;
+}
+.owl-demo7 .owl-item div img{
+    max-width: 100%;
+    width: auto;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
 .cat-assortmant_main{
     padding-top: 40px;
 }
 .cat-assortmant_main-buttons{
     border-bottom: 2px solid;
     border-image: url(../images/bottom-border.png) 1;
+    text-align: center;
 }
 .cat-assortmant_main-button{
+    float: none;
+    display: inline-block;
     height: 170px;
     text-align: center;
     background: url(../images/cat-dog-btn-bg.png) no-repeat;
     background-size: 100% 101%;
-    margin: 0 4.5% 40px;
-    width: 16%;
+    margin: 0 4% 40px;
+    width: 15%;
     box-shadow: 3px 3px 6px #362c20;
     border-radius: 24px;
     transition: .3s;
@@ -5088,7 +5176,6 @@ body#cat-assortment{
     top: -10px;
 }
 .owl-demo7-2{
-    height: auto;
     margin: 0 0 20px;
 }
 .owl-demo7-2 .owl-demo7_slider-img{
@@ -5798,12 +5885,6 @@ body#cat-assortment{
     .b-popup-content_inner-block_input input{
         margin-left: 35%;
     }
-/*
-    .b-popup-content_inner-block_input span{
-        left: 0;
-    }
-*/
-    
     .pop-up_basket-inside_bottom>a,
     .pop-up_basket-inside_bottom_block a{
         height: 40px;
@@ -6050,7 +6131,7 @@ body#cat-assortment{
     }
     .header-top_telephone,
     .header-top_telephone2{
-        margin-right: 23px;
+        margin-right: -7px;
     }
     .header-top_telephone2 .header-top_telephone2_span{
         letter-spacing: -0.5px;
@@ -6185,7 +6266,7 @@ body#cat-assortment{
         margin: 5px 0 0;
     }
     .dog-assortmant_main-button {
-        margin: 0 2.5% 40px;
+        margin: 0 2% 40px;
         width: 20%;
     }
     .dog-assortmant_main-button_title {
@@ -6259,7 +6340,7 @@ body#cat-assortment{
         margin: 5px 0 0;
     }
     .cat-assortmant_main-button {
-        margin: 0 2.5% 40px;
+        margin: 0 2% 40px;
         width: 20%;
     }
     .cat-assortmant_main-button_title {
@@ -6818,10 +6899,11 @@ body#cat-assortment{
     }
     .dog-assortmant_main-button_title {
         font-size: 14px;
+        max-height: 100px;
+        margin-top: 15px;
     }
     .dog-assortmant_main-button_img {
-        max-width: 118px;
-        max-height: 120px;
+        max-height: 100px;
         margin-top: 15px;
     }
     .owl-demo6-descr h4{
@@ -6851,8 +6933,7 @@ body#cat-assortment{
         font-size: 14px;
     }
     .cat-assortmant_main-button_img {
-        max-width: 118px;
-        max-height: 120px;
+        max-height: 100px;
         margin-top: 15px;
     }
     .owl-demo8-descr h4{
@@ -7939,7 +8020,7 @@ body#cat-assortment{
 @media (min-width: 1400px){
     .dog-assortmant_main-button{
         height: 212px;
-        margin: 0 2.5% 40px;
+        margin: 0 2% 40px;
         width: 20%;
     }
     .dog-assortmant_main-button_title{
@@ -7951,7 +8032,7 @@ body#cat-assortment{
     }
     .cat-assortmant_main-button{
         height: 212px;
-        margin: 0 2.5% 40px;
+        margin: 0 2% 40px;
         width: 20%;
     }
     .cat-assortmant_main-button_title{
@@ -8021,9 +8102,6 @@ body#cat-assortment{
 
 /*FOR FIREFOX*/
 @-moz-document url-prefix() {
-    .header-top_telephone2{
-        margin-right: 58px;
-    }
     .header-top_cat:hover{
         background-position: -164px -176px;
     }
@@ -8053,16 +8131,16 @@ body#cat-assortment{
     .basket-booking_content-hide,
     .basket-inside_single-product-hide,
     .personal-account-basket-booking_content-hide,
-    .pop-up_basket-hide{
+    .pop-up_basket-hide,
+    .pop-up_booking-hide,
+    .pop-up_enter-hide,
+    .pop-up_registr-hide{
         line-height: 30px;
     }
     .pop-up_basket-inside_single-product_kol span,
     .basket-inside_single-product_kol span,
     .personal-account-basket-main_content-inside_single-product_kol span{
         line-height: 20px;
-    }
-    @media(max-width: 1299px){
-        
     }
     @media(max-width: 1199px){
         .fixed_menu.fixed .header-middle > ul:last-child{
@@ -8073,9 +8151,6 @@ body#cat-assortment{
         }
         .header-middle ul:first-child {
             top: -14px;
-        }
-        .header-top_telephone2{
-            margin-right: 20px;
         }
         #tab_4 .tab_4_table1 tbody tr td:last-child div {
             height: 88px;
