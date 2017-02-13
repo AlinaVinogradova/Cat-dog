@@ -1189,7 +1189,7 @@ ul.header-top_submenu li a{
 .header-bottom{
     position: relative;
     border-bottom: 1px solid #2c0b00;
-    height: 353px;
+    height: 338px;
     margin-top: 20px;
 }
 .personal-account_header-bottom{
@@ -1314,6 +1314,7 @@ body#personal-account:hover .account-menu_content{
     position: absolute;
     top: 35px;
     border-bottom: 3px solid #2c0b00;
+    height: 300px;
 }
 #owl-demo2 .item img{
     max-width: 100%;
@@ -1613,6 +1614,8 @@ ul.menu-mobile_main{
 .single-product h3{
     margin: 0; 
     min-height: 41px;
+    max-height: 41px;
+    overflow: hidden;
     margin-bottom: 5px;
     font-family: Algerius;
 }
@@ -6022,8 +6025,11 @@ body#cat-assortment{
     .header-middle>ul:last-child:before{
         top: 38px;
     }
+    .header-bottom #owl-demo2{
+        height: 250px;
+    }
     .header-bottom{
-        height: 317px;
+        height: 288px;
     }
     .select-line-current{
         width: 100px;
@@ -6570,8 +6576,12 @@ body#cat-assortment{
         top: 7px;
     }
     .header-logo img{display: none;}
+    .header-bottom #owl-demo2{
+        height: 200px;
+    }
     .header-bottom{
         margin-top: 0;
+        height: 238px;
     }
     .checkbox:not(checked) + label{
         padding-left: 80px;
