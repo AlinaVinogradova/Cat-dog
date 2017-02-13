@@ -1612,6 +1612,7 @@ ul.menu-mobile_main{
 }
 .single-product h3{
     margin: 0; 
+    min-height: 41px;
     margin-bottom: 5px;
     font-family: Algerius;
 }
@@ -1634,9 +1635,9 @@ ul.menu-mobile_main{
 }
 .single-product p{
   margin: 10px 0;
-  text-overflow: 
-  ellipsis;
-  max-height: 110px; 
+  text-overflow: ellipsis;
+  max-height: 115px;
+  min-height: 115px;
   overflow: hidden;
   font-family: TimesNewRoman;
   font-size: 18px;
@@ -1700,7 +1701,16 @@ ul.menu-mobile_main{
     font-family: NexaScript;
 }
 #owl-demo .item{text-align: center}
-#owl-demo .item div{font-size: 20px; color: #2c0b00}
+#owl-demo .item div{
+    font-size: 20px;
+    color: #2c0b00;
+    max-height: 46px;
+    overflow: hidden;
+}
+#owl-demo .item div a{
+    text-decoration: none;
+    color: #2c0b00;
+}
 #owl-demo .item img{
     height: 130px;
     width: auto;
@@ -4626,7 +4636,7 @@ body#dog-assortment{
 .owl-demo5-bg{
     background: url(../images/slider-bg.png) no-repeat;
     background-size: cover;
-    background-position: 0 22px;
+    background-position: 0 0;
 }
 .owl-demo5{
     margin-bottom: 17px;
@@ -4725,7 +4735,7 @@ body#dog-assortment{
     box-shadow: 3px 3px 6px #362c20;
     border-radius: 24px;
     transition: .3s;
-    padding-top: 10px;
+    padding: 10px 0 0;
     cursor: pointer;
 }
 .dog-assortmant_main-button:hover{
@@ -4741,7 +4751,7 @@ body#dog-assortment{
     font-weight: 600;
     font-size: 20px;
     text-align: center;
-    margin: 0 10px;
+    display: block;
     text-transform: uppercase;
     transition: .3s;
     font-family: forMenu;
@@ -4942,7 +4952,7 @@ body#cat-assortment{
 .owl-demo7-bg{
     background: url(../images/slider-bg2.png) no-repeat;
     background-size: cover;
-    background-position: 0 43px;
+    background-position: 0 0;
 }
 .owl-demo7 .item{
     position: relative;
@@ -5023,7 +5033,7 @@ body#cat-assortment{
     box-shadow: 3px 3px 6px #362c20;
     border-radius: 24px;
     transition: .3s;
-    padding-top: 10px;
+    padding: 10px 0 0;
     cursor: pointer;
 }
 .cat-assortmant_main-button:hover{
@@ -5039,7 +5049,7 @@ body#cat-assortment{
     font-weight: 600;
     font-size: 20px;
     text-align: center;
-    margin: 0 10px;
+    display: block;
     text-transform: uppercase;
     transition: .3s;
     font-family: forMenu;
@@ -6266,8 +6276,8 @@ body#cat-assortment{
         margin: 5px 0 0;
     }
     .dog-assortmant_main-button {
-        margin: 0 2% 40px;
-        width: 20%;
+        margin: 0 1% 40px;
+        width: 22%;
     }
     .dog-assortmant_main-button_title {
         font-size: 19px;
@@ -6340,8 +6350,8 @@ body#cat-assortment{
         margin: 5px 0 0;
     }
     .cat-assortmant_main-button {
-        margin: 0 2% 40px;
-        width: 20%;
+        margin: 0 1% 40px;
+        width: 22%;
     }
     .cat-assortmant_main-button_title {
         font-size: 19px;
@@ -8118,6 +8128,7 @@ body#cat-assortment{
     }
     .single-product p{
         max-height: 120px;
+        min-height: 120px;
     }
     .owl-demo6-descr p{
         min-height: 105px;
