@@ -4868,7 +4868,9 @@ body#dog-assortment{
     font-size: 15px;
     border-top: 1px solid #000;
     width: 100%;
-    min-height: 96px;
+    min-height: 92px;
+    max-height: 92px;
+    overflow: hidden;
 }
 .owl-demo6-descr a.owl-demo6_a{
     float: right;
