@@ -4765,7 +4765,7 @@ body#dog-assortment{
 }
 .dog-assortmant_main-button_img{
     max-width: 135px;
-    max-height: 120px;
+    max-height: 111px;
     margin-top: 10px;
 }
 .dog-assortmant_main_products{
@@ -4822,6 +4822,8 @@ body#dog-assortment{
 }
 .owl-demo6-descr h4{
     margin: 10px 0 15px;
+    max-height: 43px;
+    min-height: 43px;
 }
 .owl-demo6-descr h4 a{
     font-family: Algerius;
@@ -5062,7 +5064,7 @@ body#cat-assortment{
 }
 .cat-assortmant_main-button_img{
     max-width: 135px;
-    max-height: 120px;
+    max-height: 111px;
     margin-top: 10px;
 }
 .cat-assortmant_main_products{
@@ -5119,6 +5121,8 @@ body#cat-assortment{
 }
 .owl-demo8-descr h4{
     margin: 10px 0 15px;
+    max-height: 43px;
+    min-height: 43px;
 }
 .owl-demo8-descr h4 a{
     font-family: Algerius;
@@ -6293,7 +6297,7 @@ body#cat-assortment{
     }
     .dog-assortmant_main-button_img{
         max-width: 145px;
-        max-height: 125px;
+        max-height: 120px;
     }
     .owl-demo7 .owl-demo7_slider-img{
         margin-left: 70px;
@@ -6367,7 +6371,7 @@ body#cat-assortment{
     }
     .cat-assortmant_main-button_img{
         max-width: 145px;
-        max-height: 125px;
+        max-height: 120px;
     }
     .basket-inside_single-product_descr{
         width: 30%;
@@ -8051,7 +8055,7 @@ body#cat-assortment{
     }
     .dog-assortmant_main-button_img{
         max-width: 180px;
-        max-height: 155px;
+        max-height: 148px;
     }
     .cat-assortmant_main-button{
         height: 212px;
@@ -8063,7 +8067,7 @@ body#cat-assortment{
     }
     .cat-assortmant_main-button_img{
         max-width: 180px;
-        max-height: 155px;
+        max-height: 148px;
     }
     .pop-up_basket-inside_title span:first-child {
         margin-right: 16%;
